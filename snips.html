@@ -1,0 +1,200 @@
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Header 							-->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- Favicons -->
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+
+<!-- For everything else -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+<!-- fill this out to force iOS to use a custom title (for longer site names) -->
+<meta name="apple-mobile-web-app-title" content="App Name">
+
+
+
+<!-- Google Webfont Loader -->
+<!-- More info here: https://developers.google.com/webfonts/docs/webfont_loader -->
+
+<script type="text/javascript">
+  WebFontConfig = {
+  	typekit: { id: 'xxxxxxx' },
+    google: { families: [ 'Droid Serif:400,700,400italic,700italic' ] },
+  	custom: { families: ['Hoefler'],
+    urls: [ 'http://cloud.typography.com/684222/756420/css/fonts.css' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Footer 							-->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- iosSlider from iosscripts.com -->
+<!-- nice touch-enabled carousels, sliders, etceteras. Check out the site and demos -->
+<!-- http://www.iosscripts.com/iosslider/ -->
+<script type="text/javascript" src="_js/libs/jquery.iosslider.js"></script>
+<!-- it uses easing stuff too, might want to add this as well -->
+<script type="text/javascript" src="_js/libs/jquery.easing-1.3.js"></script>
+
+<!-- init for iosScripts -->
+<script type='text/javascript'>
+  $('.iosSlider').iosSlider({
+    snapToChildren: true,
+    desktopClickDrag: true,
+    keyboardControls: true,
+    onSliderLoaded: sliderTest,
+    onSlideStart: sliderTest,
+    onSlideComplete: slideComplete,
+    navNextSelector: $('.next'),
+    navPrevSelector: $('.prev'),
+    //and many more things, see website for documentation
+  });
+</script>
+
+<!-- default css stuff for sliders -->
+<style type="text/css">
+  /* slider container */
+  .iosSlider {
+    /* required */
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+    width: <slider width>px;
+    height: <slider height>px;
+  }
+
+  /* slider */
+  .iosSlider .slider {
+    /* required */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* slide */
+  .iosSlider .slider .slide {
+    /* required */
+    float: left;
+
+    width: <slide width>px;
+    height: <slide height>px;
+  }
+</style>
+
+<!-- to use iosSlider, basic structure is like this: -->
+<div class = 'iosSlider'>
+  <div class = 'slider'>
+    <div class = 'item'><!--objects in here --></div>
+    <div class = 'item'><!--objects in here --></div>
+    <div class = 'item'><!--objects in here --></div>
+    <div class = 'item'><!--objects in here --></div>
+    <div class = 'item'><!--objects in here --></div>
+  </div> <!-- slider -->
+</div><!-- iosSlider -->
+
+
+
+
+<!-- Tweet! by SeaOfClouds -->
+<!-- a sweet JQuery library for bringing in tweets, way better than twitter's own JS -->
+<!-- http://tweet.seaofclouds.com/ -->
+<script type="text/javascript" src="_js/libs/jquery.tweet.js"></script>
+
+<!-- init for Tweet (put in script.js or <head>) -->
+<script type='text/javascript'>
+    jQuery(function($){
+        $(".tweet").tweet({
+            username: "upstatement",
+            join_text: "auto",
+            avatar_size: 32,
+            count: 3,
+            auto_join_text_default: "we said,", 
+            auto_join_text_ed: "we",
+            auto_join_text_ing: "we were",
+            auto_join_text_reply: "we replied to",
+            auto_join_text_url: "we were checking out",
+            loading_text: "loading tweets..."
+        });
+    });
+</script>
+
+
+<!-- Masonry by Desandro -->
+<script type="text/javascript" src="_js/libs/jquery.masonry.min.js"></script>
+
+<!-- Isotope by Desandro -->
+<script type="text/javascript" src="_js/libs/jquery.isotope.min.js"></script>
+
+<!-- Sticky Plugin -->
+<script type="text/javascript" src="_js/libs/jquery.sticky.js"></script>
+
+<!-- jQuery Tools -->
+<script src="_js/libs/jquery.tools.min.js"></script>
+
+<!-- LocalStorage & Cookie -->
+<script type="text/javascript" src="_js/libs/jquery.total-storage.js"></script>
+<script type="text/javascript" src="_js/libs/jquery.cookie.js"></script>
+
+<!-- Modals: Do you enjoy modals? Yes you do -->
+<script type="text/javascript" src="_js/libs/jquery.simplemodal.1.4.2.min.js"></script>
+
+<!-- jQuery UI -->
+<!-- The Whole Thang -->
+<script type="text/javascript" src="_js/libs/jquery.ui.min.js"></script>
+<!-- The Good Parts -->
+<script type="text/javascript" src="_js/libs/jquery.ui.core.interaction.js"></script>
+
+
+<!-- AlphaNumeric: -->
+<script type="text/javascript" src="_js/libs/jquery.alphanumeric.pack.js"></script>
+
+<!-- Scrolling -->
+<script type="text/javascript" src="_js/libs/jquery.localscroll.js"></script>
+<script type="text/javascript" src="_js/libs/jquery.scrollto-min.js"></script>
+
+<!-- Text Resizing -->
+<script type="text/javascript" src="_js/libs/jquery.fittext.js"></script>
+<script type="text/javascript" src="_js/libs/jquery.bigtext.js"></script>
+<script type="text/javascript" src="_js/libs/jquery.textfill.js"></script>
+
+
+<!-- PNG fix for IE6 -->
+<!--[if lt IE 7 ]>
+<script src="_js/libs/dd_belatedpng.js"></script>
+<script>DD_belatedPNG.fix("img, .png_bg");</script>
+<![endif]-->
+
+
+
+<!-- change the UA-XXXXX-X to be your site's ID -->
+<script>
+	var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>
+
