@@ -25,12 +25,74 @@ strong	{	font-weight: bold;	}
 em   	{	font-style: italic;	}
 
 
+p {  	
+	margin-bottom: 25px; 
+}
+
+h3 {
+	font: 20px/130% $sans;
+	margin-bottom: 25px;
+}
  
+/* ============================================= */
+/*	Header 							   			 */ 
+/* ============================================= */
+
+header {
+	background-color: #000;
+	height: 70px;
+	padding: 30px 30px 35px 30px;
+	color: #fff;
+}
+
+.nav-logo {
+	display: inline;
+	float: left;
+}
+
+.nav-link-mod {
+	display: inline;
+	float: right;
+}
+
+.nav-link-item {
+	display: inline;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
 
 
 
+/* ============================================= */
+/*	Hoop Feed							   		 */ 
+/* ============================================= */
+
+.hoop-stream {
+	img {
+		width: 100%;
+	}
+}
 
 
+
+/* ============================================= */
+/*	Footer 							   			 */ 
+/* ============================================= */
+
+footer {
+	background-color: #000;
+	height: 200px;
+	padding: 30px 30px 35px 30px;
+	color: #fff;
+}
+
+.ftr-mod {
+	max-width: 800px;
+	margin: 0 auto;
+}
 
 
 /* ============================================= */

@@ -89,7 +89,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -362,6 +362,65 @@ em {
   font-style: italic;
 }
 
+p {
+  margin-bottom: 25px;
+}
+
+h3 {
+  font: 20px/130% Arial, Helvetica, Verdana, sans-serif;
+  margin-bottom: 25px;
+}
+
+/* ============================================= */
+/*	Header 							   			 */
+/* ============================================= */
+header {
+  background-color: #000;
+  height: 70px;
+  padding: 30px 30px 35px 30px;
+  color: #fff;
+}
+
+.nav-logo {
+  display: inline;
+  float: left;
+}
+
+.nav-link-mod {
+  display: inline;
+  float: right;
+}
+
+.nav-link-item {
+  display: inline;
+  margin-right: 20px;
+}
+.nav-link-item:last-child {
+  margin-right: 0px;
+}
+
+/* ============================================= */
+/*	Hoop Feed							   		 */
+/* ============================================= */
+.hoop-stream img {
+  width: 100%;
+}
+
+/* ============================================= */
+/*	Footer 							   			 */
+/* ============================================= */
+footer {
+  background-color: #000;
+  height: 200px;
+  padding: 30px 30px 35px 30px;
+  color: #fff;
+}
+
+.ftr-mod {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* ============================================= */
 /*	Print Styles							     
 	Inline to avoid required HTTP connection     */
@@ -369,7 +428,7 @@ em {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -396,7 +455,7 @@ em {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 

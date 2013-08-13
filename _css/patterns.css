@@ -89,7 +89,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -370,7 +370,7 @@ button {
 }
 
 #style-hdr {
-  background: #222222 url('../_img/bg-leather.png?1328031973') 50% 50% repeat;
+  background: #222222 url('../_img/bg-leather.png?1376424738') 50% 50% repeat;
   padding: 20px 0;
   position: fixed;
   top: 0;
@@ -639,7 +639,7 @@ button {
   color: #464646;
   background-color: #ededed;
   padding: 10px 24px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
   position: relative;
   *zoom: 1;
 }
@@ -719,7 +719,7 @@ button {
 }
 
 .style-meta {
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid #444;
 }
 
 .code-example .detail-h:hover {
