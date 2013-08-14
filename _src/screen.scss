@@ -25,12 +25,159 @@ strong	{	font-weight: bold;	}
 em   	{	font-style: italic;	}
 
 
+p {  	
+	margin-bottom: 25px; 
+}
+
+h2 {
+	font: 50px/130% $serif;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font: 20px/130% $serif;
+	margin-bottom: 25px;
+}
  
+/* ============================================= */
+/*	Header 							   			 */ 
+/* ============================================= */
+
+header {
+	background-color: #000;
+	height: 70px;
+	padding: 30px 30px 35px 30px;
+	color: #fff;
+}
+
+.nav-logo {
+	display: inline;
+	float: left;
+}
+
+.nav-link-mod {
+	display: inline;
+	float: right;
+}
+
+.nav-link-item {
+	display: inline;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
 
 
 
+/* ============================================= */
+/*	Hoop Feed							   		 */ 
+/* ============================================= */
+
+.hoop-stream-mod {
+	img {
+		width: 100%;
+	}
+}
+
+.stream-item {
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		.stream-info-mod {
+		@include opacity (1);
+		@include trans;
+		bottom: 0px;
+		}
+	}		
+}
+
+.stream-link {
+	display: block;
+}
+
+.stream-info-mod {
+	position: absolute;
+	// bottom: -1100px;
+	// bottom: 0px;
+	background-color: #2D667E;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 20%;
+	@include trans;
+	@include opacity (0);
+}
+
+.info-border {
+	position: absolute;
+	border: 8px solid;
+	border-color: #fff;	
+	width: 80%;
+	height: 70%;
+	margin: auto;
+	text-align: center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.stream-info {
+	position:relative;
+	width: 100%;
+	height: 100%;
+}
+
+.stream-details {
+	position: absolute;
+	top: 25%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.rating-mod {
+	margin-top: 25px;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.rating {
+	margin-top: 25px;
+	padding-top: 25px;
+	border-top: 4px solid;
+	border-color: #fff;
+}
+
+/***   Star Ratings   ***/
+
+.star-5{
+	margin-top: 10px;
+	background: url(/_img/star-5.png) no-repeat 50% 50%;
+	background-size: 200px;
+	text-align: center;
+}
 
 
+
+/* ============================================= */
+/*	Footer 							   			 */ 
+/* ============================================= */
+
+footer {
+	background-color: #000;
+	padding: 30px 30px 35px 30px;
+	color: #fff;
+}
+
+.ftr-mod {
+	max-width: 800px;
+	margin: 0 auto;
+}
 
 
 /* ============================================= */
