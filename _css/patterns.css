@@ -370,7 +370,7 @@ button {
 }
 
 #style-hdr {
-  background: #222222 url('../_img/bg-leather.png?1376424738') 50% 50% repeat;
+  background: #222222 url('../_img/bg-leather.png?1376423546') 50% 50% repeat;
   padding: 20px 0;
   position: fixed;
   top: 0;
@@ -423,10 +423,10 @@ button {
   display: inline;
 }
 #style-hdr .style-tab > a {
-  -webkit-transition: color 0.2s ease-in;
-  -moz-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
-  transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   color: #999;
   display: block;
   float: left;
@@ -599,10 +599,10 @@ button {
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   border-radius: 100px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -669,10 +669,10 @@ button {
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   border-radius: 100px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -737,10 +737,10 @@ button {
   position: relative;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .touch .code-copy, .detail-h:hover .code-copy {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);

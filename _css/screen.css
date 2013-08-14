@@ -367,12 +367,12 @@ p {
 }
 
 h2 {
-  font: 50px/130% Georgia, Times, Times New Roman, serif;
-  margin-bottom: 25px;
+  font: 700 60px/130% "schoolbook-web", Georgia, Times, Times New Roman, serif;
+  margin-bottom: 15px;
 }
 
 h3 {
-  font: 20px/130% Georgia, Times, Times New Roman, serif;
+  font: 400 30px/130% "schoolbook-web", Georgia, Times, Times New Roman, serif;
   margin-bottom: 25px;
 }
 
@@ -389,6 +389,9 @@ header {
 .nav-logo {
   display: inline;
   float: left;
+  font: 400 22px/140% "alternate-gothic-no-2-d", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .nav-link-mod {
@@ -399,6 +402,9 @@ header {
 .nav-link-item {
   display: inline;
   margin-right: 20px;
+  font: 400 18px/140% "alternate-gothic-no-2-d", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .nav-link-item:last-child {
   margin-right: 0px;
@@ -416,12 +422,12 @@ header {
   overflow: hidden;
 }
 .stream-item:hover .stream-info-mod {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   bottom: 0px;
 }
 
@@ -436,10 +442,10 @@ header {
   width: 100%;
   height: 100%;
   padding: 20%;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
@@ -471,6 +477,7 @@ header {
   bottom: 0;
   left: 0;
   margin: auto;
+  padding: 0 50px 0 50px;
 }
 
 .rating-mod {
@@ -493,6 +500,7 @@ header {
   background: url(/_img/star-5.png) no-repeat 50% 50%;
   background-size: 200px;
   text-align: center;
+  padding-top: 75px;
 }
 
 /* ============================================= */

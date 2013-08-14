@@ -56,7 +56,7 @@ $context: 960 !default;
 // WHY: This are our most common defaults
 // USE: @include trans;
 // USE: @include trans(.1s, opacity, linear);
-@mixin trans($trans-time: .2s, $trans-property: all, $trans-function: ease-in) {
+@mixin trans($trans-time: .2s, $trans-property: all, $trans-function: ease-in-out) {
 	@include single-transition(#{$trans-property}, #{$trans-time}, #{$trans-function}, false);
 }
 
