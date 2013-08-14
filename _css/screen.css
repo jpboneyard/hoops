@@ -421,7 +421,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-.stream-item:hover .stream-info-mod {
+.stream-item:hover .stream-info-mod, .stream-item:hover .item-details {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -429,6 +429,54 @@ header {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   bottom: 0px;
+}
+
+.stream-item img {
+  width: 100%;
+}
+
+.item-details {
+  background-color: #3B3248;
+  position: static;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  color: #fff;
+  padding: 15px 20px 15px 20px;
+}
+.item-details h2 {
+  font: 700 20px/130% "schoolbook-web", Georgia, Times, Times New Roman, serif;
+  margin-bottom: 3px;
+}
+.item-details h3 {
+  font: 400 15px/130% "alternate-gothic-no-2-d", Arial, Helvetica, Verdana, sans-serif;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media (min-width: 1200px) {
+  .item-details {
+    position: absolute;
+    bottom: -120px;
+    padding: 22px 30px 25px 30px;
+  }
+  .item-details h2 {
+    font: 700 35px/130% "schoolbook-web", Georgia, Times, Times New Roman, serif;
+    margin-bottom: 3px;
+  }
+  .item-details h3 {
+    font: 400 20px/130% "alternate-gothic-no-2-d", Arial, Helvetica, Verdana, sans-serif;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.item-meta {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 
 .stream-link {
@@ -487,20 +535,34 @@ header {
   text-align: center;
 }
 
+/***   Star Ratings   ***/
 .rating {
-  margin-top: 25px;
-  padding-top: 25px;
-  border-top: 4px solid;
-  border-color: #fff;
+  display: inline;
+}
+.rating img {
+  max-width: 114px;
+  width: 100%;
+  margin-top: -8px;
+  padding-left: 8px;
 }
 
-/***   Star Ratings   ***/
+.rating:before {
+  content: '|';
+  font: 400 20px/100% "alternate-gothic-no-2-d", Arial, Helvetica, Verdana, sans-serif;
+  padding-left: 8px;
+}
+
+.star-55 {
+  background: url(/_img/star-5.png) no-repeat 0% 0%;
+  background-size: 100px;
+  height: 15px;
+}
+
 .star-5 {
-  margin-top: 10px;
   background: url(/_img/star-5.png) no-repeat 50% 50%;
   background-size: 200px;
-  text-align: center;
-  padding-top: 75px;
+  display: inline;
+  height: 10px;
 }
 
 /* ============================================= */
