@@ -30,7 +30,7 @@ p {
 }
 
 h2 {
-	font: 700 60px/130% $serif;
+	font: 400 60px/130% $serif;
 	margin-bottom: 15px;
 }
 
@@ -45,30 +45,45 @@ h3 {
 
 header {
 	background-color: #000;
-	height: 70px;
-	padding: 30px 30px 35px 30px;
+	height: 60px;
+	padding: 12px 30px 35px 30px;
 	color: #fff;
 }
 
 .nav-logo {
 	display: inline;
 	float: left;
-	font: 400 22px/140% $sans;
+	font: 400 17px/140% $sans;
 	text-transform: uppercase;
-	letter-spacing: 2px;	
+	letter-spacing: 1px;
+	max-width: 165px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.nav-logo-txt {
+	display: inline;
+	float: left;
+	font: 400 17px/140% $sans;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-indent: -20000px;	
 }
 
 .nav-link-mod {
 	display: inline;
 	float: right;
+	padding-top: 8px;
 }
 
 .nav-link-item {
 	display: inline;
 	margin-right: 20px;
-	font: 400 18px/140% $sans;
+	font: 400 13px/140% $sans;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 
 	&:last-child {
 		margin-right: 0px;
@@ -111,32 +126,49 @@ header {
 	@include trans;
 	width: 100%;
 	color: #fff;
-	padding: 15px 20px 15px 20px;
+	padding: 15px;
+	text-align: center;
 
-		h2 {
-			font: 700 20px/130% $serif;
+		h3 {
+			font: 400 20px/130% $serif;
 			margin-bottom: 3px;
 		}
 
-		h3 {
-			font: 400 15px/130% $sans;
+		h4 {
+			font: 400 10px/130% $sans;
 			display: inline;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
 
-	@media (min-width: 1200px) {
+	@media (min-width: 800px) {
 		position: absolute;
 		bottom: -120px;
 		padding: 22px 30px 25px 30px;
 
-		h2 {
-			font: 700 35px/130% $serif;
-			margin-bottom: 3px;
+		h3 {
+			font: 400 30px/130% $serif;
+			margin-bottom: 5px;
 		}
 
+		h4 {
+			font: 400 12px/130% $sans;
+			display: inline;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}	
+	}//mq
+
+	@media (min-width: 1200px) {
+		padding: 22px 30px 25px 30px;
+
 		h3 {
-			font: 400 20px/130% $sans;
+			font: 400 35px/130% $serif;
+			margin-bottom: 5px;
+		}
+
+		h4 {
+			font: 400 14px/130% $sans;
 			display: inline;
 			text-transform: uppercase;
 			letter-spacing: 2px;
@@ -150,33 +182,6 @@ header {
 
 .stream-link {
 	display: block;
-}
-
-.stream-info-mod {
-	position: absolute;
-	// bottom: -1100px;
-	// bottom: 0px;
-	background-color: #2D667E;
-	color: #fff;
-	width: 100%;
-	height: 100%;
-	padding: 20%;
-	@include trans;
-	@include opacity (0);
-}
-
-.info-border {
-	position: absolute;
-	border: 8px solid;
-	border-color: #fff;	
-	width: 80%;
-	height: 70%;
-	margin: auto;
-	text-align: center;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 }
 
 .stream-info {
@@ -210,23 +215,32 @@ header {
 	display: inline;
 
 	img {
-		max-width: 114px;
+		max-width: 83px;
 		width: 100%;
-		margin-top: -8px;
-		padding-left: 8px;
+		margin-top: -4px;
+		padding-left: 7px;
 	}
+
+	@media (min-width: 800px) {
+		img {
+			max-width: 106px;
+			width: 100%;
+			margin-top: -6px;
+			padding-left: 8px;
+		}
+	}//mq
 }
 
 .rating:before {
 	content:'|';
-	font: 400 20px/100% $sans;
-	padding-left: 8px;
-}
+	font: 400 14px/100% $sans;
+	padding-left: 7px;
+	@include opacity (.5);
 
-.star-55{
-	background: url(/_img/star-5.png) no-repeat 0% 0%;
-	background-size: 100px;
-	height: 15px;
+	@media (min-width: 800px) {
+		font: 400 18px/100% $sans;
+		padding-left: 8px;	
+	}
 }
 
 .star-5{
@@ -238,14 +252,44 @@ header {
 
 
 
+
+/* ============================================= */
+/*	Hoop Styles							   	     */ 
+/* ============================================= */
+
+.hoop-1 {
+	.item-details {
+		background-color: #1f4656;
+	}
+}
+
+.hoop-2 {
+	.item-details {
+		background-color: #2f2938;
+	}
+}
+
 /* ============================================= */
 /*	Footer 							   			 */ 
 /* ============================================= */
 
 footer {
 	background-color: #000;
-	padding: 30px 30px 35px 30px;
-	color: #fff;
+	padding: 40px;
+	text-align: center;
+	color: #333;
+
+	p {
+		font: 700 11px/130% $sans;
+		margin-bottom: 3px;
+	}
+
+	h3 {
+		margin-bottom: 5px;
+		font: 400 25px/130% $sans;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
 }
 
 .ftr-mod {
@@ -253,6 +297,10 @@ footer {
 	margin: 0 auto;
 }
 
+.ftr-logo {
+	max-width: 169px;
+	margin-bottom: 10px;
+}
 
 /* ============================================= */
 /*	Print Styles							     
