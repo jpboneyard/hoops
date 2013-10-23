@@ -30,12 +30,12 @@ p {
 }
 
 h2 {
-	font: 400 60px/130% $serif;
+	font: 400 60px/130% $sans;
 	margin-bottom: 15px;
 }
 
 h3 {
-	font: 400 30px/130% $serif;
+	font: 400 30px/130% $sans;
 	margin-bottom: 25px;
 }
  
@@ -44,19 +44,23 @@ h3 {
 /* ============================================= */
 
 header {
-	background-color: #000;
-	height: 60px;
-	padding: 12px 30px 35px 30px;
+	background-color: $site-black;
+	height: 70px;
+	padding: 20px;
 	color: #fff;
+
+	@media (min-width: 600px) {
+		padding: 18px 60px 35px 60px;
+	}//mq
 }
 
 .nav-logo {
 	display: inline;
 	float: left;
-	font: 400 17px/140% $sans;
+	font: 700 17px/140% $sans;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	max-width: 165px;
+	max-width: 175px;
 
 	img {
 		width: 100%;
@@ -66,7 +70,7 @@ header {
 .nav-logo-txt {
 	display: inline;
 	float: left;
-	font: 400 17px/140% $sans;
+	font: 600 17px/140% $sans;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-indent: -20000px;	
@@ -81,16 +85,48 @@ header {
 .nav-link-item {
 	display: inline;
 	margin-right: 20px;
-	font: 400 13px/140% $sans;
+	font: 600 14px/140% $sans;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	color: $site-tan;
+	display: none;
+
+	@media (min-width: 761px) {
+		display: inline;
+	}//mq
+
+	a {
+		&:hover {
+			color: $site-gold;
+		}//hover
+	}//a
 
 	&:last-child {
 		margin-right: 0px;
 	}
 }
 
+.hood-list {
+	display: none;
+	background-color: #191919;
+	padding: 10px;
+}
 
+.hood-list-item {
+	font: 400 16px/160% $sans;
+	color: $site-tan;
+	padding-bottom: 5px;
+}
+
+.m-nav-mod {
+	float: right;
+	display: block;
+	padding-top: 10px;
+
+	@media (min-width: 761px) {
+		display: none;
+	}//mq
+}
 
 /* ============================================= */
 /*	Hoop Feed							   		 */ 
@@ -123,43 +159,53 @@ header {
 .item-details {
 	background-color: #3B3248;
 	position: static;
-	@include trans;
 	width: 100%;
 	color: #fff;
-	padding: 15px;
+	padding: 16px;
 	text-align: center;
 
-		h3 {
-			font: 400 20px/130% $serif;
-			margin-bottom: 3px;
-		}
-
-		h4 {
-			font: 400 10px/130% $sans;
-			display: inline;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-
-	@media (min-width: 800px) {
-		position: absolute;
-		bottom: -120px;
-		padding: 22px 30px 25px 30px;
-
-		h3 {
-			font: 400 30px/130% $serif;
-			margin-bottom: 5px;
-		}
-
-		h4 {
-			font: 400 12px/130% $sans;
-			display: inline;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}	
+	@media (min-width: 600px) {
+		padding: 25px;
 	}//mq
 
-	@media (min-width: 1200px) {
+	@media (min-width:761px) {
+		padding: 32px;
+	}//mq
+
+		h3,h4 {
+			font: 600 11px/130% $sans;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			margin-bottom: 3px;
+			color: $site-tan;
+			display: inline;
+
+			@media (min-width: 600px) {
+				font-size: 14px;
+			}//mq
+
+			@media (min-width: 761px) {
+				font: 600 19px/130% $sans;
+			}//mq
+		}//h3h4
+
+		h4 {
+			margin-left: 3px;
+			@include opacity(.6);
+		}//h4
+
+		h4:before {
+			content:"|";
+			font-weight: 100;
+			font-size: 16px;
+			padding-right: 4px;
+
+			@media (min-width: 761px) {
+				font-size: 23px;
+			}//mq
+		}//h4before
+
+/*	@media (min-width: 1200px) {
 		padding: 22px 30px 25px 30px;
 
 		h3 {
@@ -173,7 +219,7 @@ header {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}	
-	}//mq
+	}//mq*/
 }//item-details
 
 .item-meta {
@@ -200,56 +246,16 @@ header {
 	padding: 0 50px 0 50px;
 }
 
-.rating-mod {
-	margin-top: 25px;
-	width: 50%;
-	margin: 0 auto;
-	text-align: center;
-}
 
+/* ============================================= */
+/*	About  								   	     */ 
+/* ============================================= */
 
-
-/***   Star Ratings   ***/
-
-.rating {
-	display: inline;
-
+.about {
 	img {
-		max-width: 83px;
 		width: 100%;
-		margin-top: -4px;
-		padding-left: 7px;
-	}
-
-	@media (min-width: 800px) {
-		img {
-			max-width: 106px;
-			width: 100%;
-			margin-top: -6px;
-			padding-left: 8px;
-		}
-	}//mq
+	}//img
 }
-
-.rating:before {
-	content:'|';
-	font: 400 14px/100% $sans;
-	padding-left: 7px;
-	@include opacity (.5);
-
-	@media (min-width: 800px) {
-		font: 400 18px/100% $sans;
-		padding-left: 8px;	
-	}
-}
-
-.star-5{
-	background: url(/_img/star-5.png) no-repeat 50% 50%;
-	background-size: 200px;
-	display: inline;
-	height: 10px;
-}
-
 
 
 
@@ -259,13 +265,19 @@ header {
 
 .hoop-1 {
 	.item-details {
-		background-color: #1f4656;
+		background-color: #B5494F;
 	}
 }
 
 .hoop-2 {
 	.item-details {
-		background-color: #2f2938;
+		background-color: #20998C;
+	}
+}
+
+.hoop-3 {
+	.item-details {
+		background-color: #333433;
 	}
 }
 
@@ -274,7 +286,7 @@ header {
 /* ============================================= */
 
 footer {
-	background-color: #000;
+	background-color: $site-black;
 	padding: 40px;
 	text-align: center;
 	color: #333;
