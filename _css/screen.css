@@ -384,7 +384,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.body-txt, bio-txt {
+.body-txt, bio-txt, dropcap {
   font: 400 19px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 25px;
   color: #ececda;
@@ -394,6 +394,15 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
   font-style: italic;
+}
+
+.dropcap {
+  display: block;
+  float: left;
+  font-size: 55px;
+  color: #ececda;
+  margin-right: 10px;
+  margin-top: -3px;
 }
 
 /* ============================================= */
@@ -529,21 +538,6 @@ header {
   color: #fff;
   padding: 16px;
   text-align: center;
-  /*	@media (min-width: 1200px) {
-  		padding: 22px 30px 25px 30px;
-  
-  		h3 {
-  			font: 400 35px/130% $serif;
-  			margin-bottom: 5px;
-  		}
-  
-  		h4 {
-  			font: 400 14px/130% $sans;
-  			display: inline;
-  			text-transform: uppercase;
-  			letter-spacing: 2px;
-  		}	
-  	}//mq*/
 }
 @media (min-width: 600px) {
   .item-details {
@@ -588,6 +582,9 @@ header {
   .item-details h4:before {
     font-size: 23px;
   }
+}
+a .item-details:hover {
+  background-color: #111111;
 }
 
 .item-meta {
