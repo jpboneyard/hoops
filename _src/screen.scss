@@ -38,20 +38,54 @@ h3 {
 	font: 400 30px/130% $sans;
 	margin-bottom: 25px;
 }
+
+.kicker {
+	font: 800 21px/140% $sans;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.body-txt,bio-txt {
+	font: 400 19px/170% $sans;
+	margin-bottom: 25px;
+	color: $site-tan;
+}
+
+.bio-txt {
+	@include opacity(.7);
+	font-style: italic;
+}
  
 /* ============================================= */
 /*	Header 							   			 */ 
 /* ============================================= */
 
 header {
+	height: 70px;
+}
+
+#topNav {     
+	overflow: hidden; 
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999; 
 	background-color: $site-black;
 	height: 70px;
 	padding: 20px;
-	color: #fff;
 
 	@media (min-width: 600px) {
 		padding: 18px 60px 35px 60px;
-	}//mq
+	}//mq	
+}
+
+#topNav.hidden {
+	display: none;
 }
 
 .nav-logo {
@@ -76,7 +110,7 @@ header {
 	text-indent: -20000px;	
 }
 
-.nav-link-mod {
+#nav-link-mod {
 	display: inline;
 	float: right;
 	padding-top: 8px;
@@ -251,13 +285,18 @@ header {
 /*	About  								   	     */ 
 /* ============================================= */
 
-.about {
-	img {
-		width: 100%;
-	}//img
+#about {
+	background: url(../_img/about-bg.jpg) center center no-repeat;
+	min-height: 800px;
+	padding: 0px 20px 40px 20px;
+	background-size: cover;	
 }
 
-
+.about-txt-mod {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 23%;
+}
 
 /* ============================================= */
 /*	Hoop Styles							   	     */ 
@@ -313,6 +352,52 @@ footer {
 	max-width: 169px;
 	margin-bottom: 10px;
 }
+
+
+/* ============================================= */
+/*	Button Style 							   	 */ 
+/* ============================================= */
+
+.btn-submit{
+	a {
+		position: relative;
+	    color: rgba(255,255,255,1);
+	    text-decoration: none;
+	    background-color: rgba(85,73,100,1);
+	    display: block;
+	    padding: 15px 4px;
+	    -webkit-border-radius: 8px;
+	    -moz-border-radius: 8px;
+	    border-radius: 8px;
+	    -webkit-box-shadow: 0px 4px 0px rgba(70,59,83,1), 0px 4px 20px rgba(0,0,0,.7);
+	    -moz-box-shadow: 0px 4px 0px rgba(70,59,83,1), 0px 74x 20px rgba(0,0,0,.7);
+	    box-shadow: 0px 4px 0px rgba(70,59,83,1), 0px 4px 20px rgba(0,0,0,.7);
+	    margin: 40px auto;
+		width: 160px;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		-webkit-transition: all .1s ease;
+		-moz-transition: all .1s ease;
+		-ms-transition: all .1s ease;
+		-o-transition: all .1s ease;
+		transition: all .1s ease;
+	}
+
+	a:hover {
+		@include trans;
+	    background-color: rgba(102,89,120,1);
+	}
+
+	a:active {
+	    -webkit-box-shadow: 0px 3px 0px rgba(70,59,83,1), 0px 3px 6px rgba(0,0,0,.9);
+	    -moz-box-shadow: 0px 3px 0px rgba(70,59,83,1), 0px 3px 6px rgba(0,0,0,.9);
+	    box-shadow: 0px 3px 0px rgba(70,59,83,1), 0px 3px 6px rgba(0,0,0,.9);
+	    position: relative;
+	    top: 4px;
+	}
+}//btn-submit
 
 /* ============================================= */
 /*	Print Styles							     
