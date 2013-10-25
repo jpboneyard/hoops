@@ -8,12 +8,12 @@ $(window).scroll(function() {
     clearTimeout(scroll_time);
     var current_scroll = $(window).scrollTop();
     
-    if (current_scroll >= $('#topNav').outerHeight()) {
+    if (current_scroll >= $('#top-nav').outerHeight()) {
         if (current_scroll <= scroll_pos) {
-            $('#topNav').removeClass('hidden');    
+            $('#top-nav').removeClass('hidden');    
         }
         else {
-            $('#topNav').addClass('hidden');  
+            $('#top-nav').addClass('hidden');  
         }
     }
     scroll_time = setTimeout(function() {
