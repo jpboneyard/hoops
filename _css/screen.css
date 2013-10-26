@@ -513,7 +513,10 @@ header {
 .hood-list {
   display: none;
   background-color: #191919;
-  padding: 10px;
+  padding: 20px 30px;
+  max-width: 175px;
+  position: absolute;
+  z-index: 22222222;
 }
 
 .hood-list-item {
@@ -565,6 +568,8 @@ header {
   color: #fff;
   padding: 16px;
   text-align: center;
+  z-index: 30000;
+  position: relative;
 }
 @media (min-width: 600px) {
   .item-details {
@@ -634,6 +639,24 @@ header {
   left: 0;
   margin: auto;
   padding: 0 50px 0 50px;
+}
+
+.hoop-img {
+  position: relative;
+  z-index: 1;
+}
+
+.net-img {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fixed-ball {
+  position: fixed;
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* ============================================= */
