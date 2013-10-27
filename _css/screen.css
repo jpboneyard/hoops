@@ -349,6 +349,10 @@ button {
 /* ============================================= */
 /*	Universal						   			 */
 /* ============================================= */
+body {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -385,9 +389,14 @@ h3 {
 }
 
 .body-txt, bio-txt, dropcap {
-  font: 400 19px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  font: 400 17px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 25px;
   color: #ececda;
+}
+@media (min-width: 600px) {
+  .body-txt, bio-txt, dropcap {
+    font-size: 19px;
+  }
 }
 .body-txt a, bio-txt a, dropcap a {
   text-decoration: underline;
@@ -431,14 +440,15 @@ header {
 }
 
 #top-nav {
-  overflow: hidden;
+  /*	overflow: hidden; 
+  */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 33333333;
   background-color: #231f20;
   height: 70px;
   padding: 20px;
@@ -462,7 +472,7 @@ header {
   top: -70px;
 }
 
-.nav-logo {
+.nav-logo-mod {
   display: inline;
   float: left;
   font: 700 17px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
@@ -470,23 +480,6 @@ header {
   letter-spacing: 1px;
   max-width: 175px;
   position: relative;
-}
-.nav-logo img {
-  width: 100%;
-}
-
-.nav-logo-top {
-  position: absolute;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-.nav-logo-top:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
 }
 
 .nav-logo-hover {
@@ -496,6 +489,26 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  z-index: 222;
+}
+.nav-logo-hover:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.nav-logo-top {
+  position: absolute;
+  max-width: 175px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  top: 0px;
+  left: 0px;
 }
 
 .nav-logo-txt {
@@ -511,6 +524,21 @@ header {
   display: inline;
   float: right;
   padding-top: 8px;
+  position: relative;
+}
+#nav-link-mod ul {
+  position: absolute;
+  display: none;
+  top: 51px;
+}
+#nav-link-mod > li:hover {
+  background-color: #191919;
+  padding-top: 30px 20px 30px 20px;
+}
+#nav-link-mod > li:hover ul {
+  background-color: #191919;
+  display: block;
+  padding: 10px 0px 20px 20px;
 }
 
 .nav-link-item {
@@ -527,8 +555,10 @@ header {
     display: inline;
   }
 }
-.nav-link-item a:hover {
+.nav-link-item:hover {
+  padding: 40px 10px 30px 20px;
   color: #7c735b;
+  margin-right: 10px;
 }
 .nav-link-item:last-child {
   margin-right: 0px;
@@ -536,19 +566,20 @@ header {
 
 .hood-list {
   background-color: #191919;
-  padding: 20px 30px;
-  max-width: 175px;
+  padding: 20px 30px 20px 20px;
+  max-width: 230px;
   position: absolute;
   z-index: 22222222;
+  width: 115%;
+  color: #ececda;
 }
 .hood-list a:hover {
   color: #7c735b;
 }
 
 .hood-list-item {
-  font: 400 16px/160% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
-  color: #ececda;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font: 200 14px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
 }
 
 .m-nav-mod {
@@ -689,16 +720,41 @@ header {
 /*	About  								   	     */
 /* ============================================= */
 #about {
-  background: url(../_img/about-bg.jpg) center center no-repeat;
-  min-height: 800px;
-  padding: 0px 20px 40px 20px;
+  /*	background: url(../_img/about-bg.png) center center no-repeat;
+  */
+  padding: 100px 20px 40px 20px;
   background-size: cover;
+  background-color: #14A798;
+  position: relative;
+}
+@media (min-width: 900px) {
+  #about {
+    padding: 150px 20px 40px 20px;
+  }
+}
+
+.about-bg-front {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 222;
+}
+
+.about-bg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  max-width: 100%;
+  z-index: 2;
 }
 
 .about-txt-mod {
   max-width: 600px;
   margin: 0 auto;
   padding: 80px 0px 40px 0px;
+  position: relative;
+  z-index: 223;
 }
 
 .site-ball-mod {
@@ -710,6 +766,7 @@ header {
   text-align: center;
   vertical-align: center;
   margin-bottom: 20px;
+  pointer-events: none;
 }
 
 .call-to-action {
@@ -717,6 +774,19 @@ header {
   padding: 10px;
   margin: 0 auto;
   text-align: center;
+}
+
+.blimp {
+  z-index: 22;
+  margin-top: -36%;
+  max-width: 160px;
+  position: relative;
+  display: none;
+}
+@media (min-width: 1000px) {
+  .blimp {
+    display: inline;
+  }
 }
 
 /* ============================================= */
@@ -839,6 +909,45 @@ footer h3 {
   box-shadow: 0px 2px 0px #463b53, 0px 3px 6px rgba(0, 0, 0, 0.9);
   position: relative;
   top: 4px;
+}
+
+/* ============================================= */
+/*	Animations 								   	 */
+/* ============================================= */
+.blimp-animation {
+  -webkit-animation: blimp 75s linear infinite;
+  -moz-animation: blimp 75s linear infinite;
+  -o-animation: blimp 75s linear infinite;
+}
+
+@-webkit-keyframes blimp {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@-moz-keyframes blimp {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@-o-keyframes blimp {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1000px;
+  }
 }
 
 /* ============================================= */
