@@ -526,6 +526,11 @@ header {
   padding-top: 8px;
   position: relative;
 }
+@media (min-width: 761px) {
+  #nav-link-mod {
+    display: inline;
+  }
+}
 #nav-link-mod ul {
   position: absolute;
   display: none;
@@ -533,7 +538,11 @@ header {
 }
 #nav-link-mod > li:hover {
   background-color: #191919;
-  padding-top: 30px 20px 30px 20px;
+  padding-top: 30px;
+}
+#nav-link-mod > li:hover:last-child {
+  background-color: #231f20;
+  padding: 0px;
 }
 #nav-link-mod > li:hover ul {
   background-color: #191919;
@@ -542,7 +551,6 @@ header {
 }
 
 .nav-link-item {
-  display: inline;
   margin-right: 20px;
   font: 600 14px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -562,6 +570,10 @@ header {
 }
 .nav-link-item:last-child {
   margin-right: 0px;
+}
+
+.visible .nav-link-item {
+  display: block;
 }
 
 .hood-list {
@@ -710,22 +722,18 @@ header {
   pointer-events: none;
 }
 
-.fixed-ball {
-  position: fixed;
-  pointer-events: none;
-  z-index: 2;
-}
-
 /* ============================================= */
 /*	About  								   	     */
 /* ============================================= */
 #about {
-  /*	background: url(../_img/about-bg.png) center center no-repeat;
-  */
-  padding: 100px 20px 40px 20px;
-  background-size: cover;
+  padding: 60px 20px 40px 20px;
   background-color: #14A798;
   position: relative;
+}
+@media (min-width: 761px) {
+  #about {
+    padding-top: 100px;
+  }
 }
 @media (min-width: 900px) {
   #about {
@@ -752,9 +760,14 @@ header {
 .about-txt-mod {
   max-width: 600px;
   margin: 0 auto;
-  padding: 80px 0px 40px 0px;
+  padding: 0px 0px 40px 0px;
   position: relative;
   z-index: 223;
+}
+@media (min-width: 761px) {
+  .about-txt-mod {
+    padding-top: 80px;
+  }
 }
 
 .site-ball-mod {
@@ -767,6 +780,12 @@ header {
   vertical-align: center;
   margin-bottom: 20px;
   pointer-events: none;
+}
+
+.fixed-ball {
+  position: fixed;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .call-to-action {

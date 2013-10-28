@@ -171,6 +171,10 @@ header {
 	padding-top: 8px;
 	position: relative;
 
+	@media (min-width: 761px) {
+		display: inline;
+	}//mq
+
 	ul {
 		position: absolute;
 		display: none;
@@ -180,7 +184,12 @@ header {
 	>li {
 		&:hover {
 			background-color: #191919;
-			padding-top: 30px 20px 30px 20px; 
+			padding-top: 30px; 
+
+			&:last-child {
+				background-color: $site-black;
+				padding: 0px; 
+			}
 		}
 
 		&:hover ul {
@@ -192,7 +201,6 @@ header {
 }
 
 .nav-link-item {
-	display: inline;
 	margin-right: 20px;
 	font: 600 14px/140% $sans;
 	text-transform: uppercase;
@@ -218,6 +226,12 @@ header {
 
 	&:last-child {
 		margin-right: 0px;
+	}
+}
+
+.visible {
+	.nav-link-item {
+		display: block;
 	}
 }
 
@@ -373,23 +387,19 @@ header {
 	pointer-events: none;
 }
 
-.fixed-ball {
-	position: fixed;
-	pointer-events: none;
-	
-	z-index: 2;
-}
 
 /* ============================================= */
 /*	About  								   	     */ 
 /* ============================================= */
 
 #about {
-/*	background: url(../_img/about-bg.png) center center no-repeat;
-*/	padding: 100px 20px 40px 20px;
-	background-size: cover;	
+	padding: 60px 20px 40px 20px;
 	background-color: #14A798;
 	position: relative;
+
+	@media (min-width: 761px) {
+		padding-top: 100px;
+	}//mq
 
 	@media (min-width: 900px) {
 		padding: 150px 20px 40px 20px;
@@ -412,14 +422,17 @@ header {
 	z-index: 2;
 }
 
-
 .about-txt-mod {
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 80px 0px 40px 0px;
+	padding: 0px 0px 40px 0px;
 	position: relative;
 	z-index: 223;
-}
+
+	@media (min-width: 761px) {
+		padding-top: 80px;
+	}//mq
+}//about-txt-mod
 
 .site-ball-mod {
 	text-align: center;
@@ -431,6 +444,12 @@ header {
 	vertical-align: center;
 	margin-bottom: 20px;
 	pointer-events: none;
+}
+
+.fixed-ball {
+	position: fixed;
+	pointer-events: none;
+	z-index: 2;
 }
 
 .call-to-action {
