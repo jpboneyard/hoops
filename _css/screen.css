@@ -753,7 +753,7 @@ header {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  max-width: 100%;
+  width: 100%;
   z-index: 2;
 }
 
