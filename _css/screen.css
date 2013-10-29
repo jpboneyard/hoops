@@ -456,6 +456,12 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  *zoom: 1;
+}
+#top-nav:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media (min-width: 600px) {
   #top-nav {
@@ -480,6 +486,12 @@ header {
   letter-spacing: 1px;
   max-width: 175px;
   position: relative;
+  *zoom: 1;
+}
+.nav-logo-mod:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .nav-logo-hover {
@@ -576,6 +588,15 @@ header {
   display: block;
 }
 
+.nav-chrome-mod {
+  *zoom: 1;
+}
+.nav-chrome-mod:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .hood-list {
   background-color: #191919;
   padding: 20px 30px 20px 20px;
@@ -642,7 +663,7 @@ header {
 .item-details h3, .item-details h4 {
   font: 200 11px/130% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin-bottom: 3px;
   color: #ececda;
   display: inline;
@@ -650,6 +671,7 @@ header {
 @media (min-width: 600px) {
   .item-details h3, .item-details h4 {
     font-size: 14px;
+    letter-spacing: 3px;
   }
 }
 @media (min-width: 900px) {

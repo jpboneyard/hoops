@@ -51,7 +51,7 @@ $(window).scroll(function() {
 
     //becomes position absolute
 	$(window).scroll(function() {
-	   if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+	   if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
 	       $(".site-ball-mod").addClass('absolute-ball');
 	       $(".site-ball-mod").removeClass('fixed-ball');
 	       // alert("near bottom!");
@@ -61,6 +61,14 @@ $(window).scroll(function() {
 	       $(".site-ball-mod").addClass('fixed-ball');
 	   }
 	});
+
+    //when the page loads...
+    //if the window width < 761px
+    //then set the height of #nav-list-mod to the window height
+
+    //when the window resizes...
+    //if the window width < 761px
+    //then set the height of #nav-list-mod to the window height
 
 
 

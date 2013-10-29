@@ -111,6 +111,7 @@ header {
 	height: 70px;
 	padding: 20px;
 	@include trans;
+	@include pie-clearfix;
 
 	@media (min-width: 600px) {
 		padding: 18px 60px 35px 60px;
@@ -131,6 +132,7 @@ header {
 	letter-spacing: 1px;
 	max-width: 175px;
 	position: relative;
+	@include pie-clearfix;
 }
 
 .nav-logo-hover {
@@ -234,6 +236,10 @@ header {
 	}
 }
 
+.nav-chrome-mod {
+	@include pie-clearfix;
+}
+
 .hood-list {
 	background-color: #191919;
 	padding: 20px 30px 20px 20px;
@@ -306,13 +312,14 @@ header {
 		h3,h4 {
 			font: 200 11px/130% $sans;
 			text-transform: uppercase;
-			letter-spacing: 3px;
+			letter-spacing: 2px;
 			margin-bottom: 3px;
 			color: $site-tan;
 			display: inline;
 
 			@media (min-width: 600px) {
 				font-size: 14px;
+				letter-spacing: 3px;
 			}//mq
 
 			@media (min-width: 900px) {
