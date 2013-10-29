@@ -640,7 +640,7 @@ header {
   }
 }
 .item-details h3, .item-details h4 {
-  font: 600 11px/130% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  font: 200 11px/130% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 3px;
