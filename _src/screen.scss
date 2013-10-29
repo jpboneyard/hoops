@@ -20,7 +20,6 @@
 /*	Universal						   			 */ 
 /* ============================================= */
 
-
 body {
 	overflow: hidden;
 }
@@ -266,6 +265,12 @@ header {
 	}//mq
 }
 
+.active-link {
+	color: $site-gold;
+}
+
+
+
 /* ============================================= */
 /*	Hoop Feed							   		 */ 
 /* ============================================= */
@@ -278,17 +283,7 @@ header {
 
 .stream-item {
 	position: relative;
-	overflow: hidden;
-	&:hover {
-		.stream-info-mod, .item-details {
-		@include trans;
-		@include opacity (1);
-		bottom: 0px;
-		}
-	}		
-}
-
-.stream-item {
+	overflow: hidden;	
 	img {
 		width: 100%;
 	}
@@ -344,10 +339,6 @@ header {
 				font-size: 23px;
 			}//mq
 		}//h4before
-
-		a &:hover {
-
-		}
 
 }//item-details
 
@@ -436,6 +427,11 @@ header {
 
 .site-ball-mod {
 	text-align: center;
+	width: 100%;
+	
+	img {
+		width: 100%;
+	}
 }
 
 .site-ball {
@@ -449,7 +445,15 @@ header {
 .fixed-ball {
 	position: fixed;
 	pointer-events: none;
-	z-index: 2;
+	z-index: 1;
+	top: 0%;
+	left: 0%;
+}
+
+.absolute-ball {
+	position: absolute;
+	bottom: 43%;
+	left: 0%;
 }
 
 .call-to-action {
@@ -480,26 +484,51 @@ header {
 .hoop-1 {
 	.item-details {
 		background-color: #B5494F;
-	}
-}
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#b5494f, 7%);
+		}//hover
+	}//item-details
+}//hoop
 
 .hoop-2 {
 	.item-details {
 		background-color: #20998C;
-	}
-}
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#20998C, 7%);
+		}//hover
+	}//item-details
+}//hoop
 
 .hoop-3 {
 	.item-details {
 		background-color: #333433;
-	}
-}
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#333433, 7%);
+		}//hover
+	}//item-details
+}//hoop
 
 .hoop-4 {
 	.item-details {
-		background-color: #564E71;
-	}
-}
+		background-color: #dbbd64;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#dbbd64, 7%);
+		}//hover
+	}//item-details
+}//hoop
+
 
 /* ============================================= */
 /*	Footer 							   			 */ 

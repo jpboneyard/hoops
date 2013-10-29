@@ -31,9 +31,9 @@ $(window).scroll(function() {
     $(".hood-list-item a").click(function(e) {
         e.preventDefault();
         //Remove the active state from whichever button is active
-       $(".hood-list-item a.active").removeClass('active');
+       $(".hood-list-item a.active-link").removeClass('active-link');
         //And add the active state to whichever button was clicked
-        $(this).addClass('active');
+        $(this).addClass('active-link');
 
        var location = $(this).data("location");
        //check whether it equals all
@@ -46,10 +46,23 @@ $(window).scroll(function() {
         }
     });
 
-        //when viewport reaches about section ball (set up alert box when position reached to test) (testing for position of element relative to viewport) (set up console.log to see what position is)
+    //when viewport reaches about section ball (set up alert box when position reached to test) (testing for position of element relative to viewport) (set up console.log to see what position is)
 
 
-        //becomes position absolute
+    //becomes position absolute
+	$(window).scroll(function() {
+	   if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+	       $(".site-ball-mod").addClass('absolute-ball');
+	       $(".site-ball-mod").removeClass('fixed-ball');
+	       // alert("near bottom!");
+	   }
+	   else {
+	       $(".site-ball-mod").removeClass('absolute-ball');
+	       $(".site-ball-mod").addClass('fixed-ball');
+	   }
+	});
+
+
 
 
 });

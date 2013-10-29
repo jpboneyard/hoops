@@ -605,6 +605,10 @@ header {
   }
 }
 
+.active-link {
+  color: #7c735b;
+}
+
 /* ============================================= */
 /*	Hoop Feed							   		 */
 /* ============================================= */
@@ -616,16 +620,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-.stream-item:hover .stream-info-mod, .stream-item:hover .item-details {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-  bottom: 0px;
-}
-
 .stream-item img {
   width: 100%;
 }
@@ -772,6 +766,10 @@ header {
 
 .site-ball-mod {
   text-align: center;
+  width: 100%;
+}
+.site-ball-mod img {
+  width: 100%;
 }
 
 .site-ball {
@@ -785,7 +783,15 @@ header {
 .fixed-ball {
   position: fixed;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.absolute-ball {
+  position: absolute;
+  bottom: 43%;
+  left: 0%;
 }
 
 .call-to-action {
@@ -813,18 +819,62 @@ header {
 /* ============================================= */
 .hoop-1 .item-details {
   background-color: #B5494F;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-1 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #9c3f44;
 }
 
 .hoop-2 .item-details {
   background-color: #20998C;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-2 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #1a7b71;
 }
 
 .hoop-3 .item-details {
   background-color: #333433;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-3 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #212221;
 }
 
 .hoop-4 .item-details {
-  background-color: #564E71;
+  background-color: #dbbd64;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-4 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #d4b147;
 }
 
 /* ============================================= */
