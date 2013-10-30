@@ -176,37 +176,30 @@ header {
 	display: none;
 	float: right;
 
-	@media (min-width: 402px) {
+	@media (min-width: 700px) {
 		display: inline;
 		float: right;
 		padding-top: 8px;
 		position: relative;
-	}
-
-
-	@media (min-width: 761px) {
-		display: inline;
-	}//mq
-
-	.hood-list {
+		background-color: transparent;
+		width: auto;
 	}
 
 	>.nav-link-item {
 		@media (min-width: 402px) {
 			&:hover {
-				background-color: #191919;
-				padding-top: 30px; 
+				padding-top: 0px; 
 
 				&:last-child {
-					background-color: $site-black;
-					padding: 0px; 
+					background-color: #191919;
+					padding: 30px 15px; 
 				}//lc
 			}//hover
 
-			&:hover ul {
+			&:hover .hood-list {
 				background-color: #191919;
 				display: block;
-				padding: 10px 0px 20px 20px;
+				padding: 10px 20px 20px 20px;
 			}//hover
 		}//mq	
 	}//nav-link-item
@@ -218,35 +211,52 @@ header {
 	letter-spacing: 2px;
 	color: $site-tan;
 	display: none;	
-	padding: 20px 0px 20px 20px;
 	border-bottom: 1px solid #222;
+
+	a {
+		padding: 20px 0px 20px 20px;
+		display: block;
+		width: 100%;
+
+		@media (min-width: 760px) {
+			padding: 0px;
+			display: inline;
+			width: auto;
+			padding-right: 15px;
+		}//mq
+	}//a
 
 	&:last-child {
 		border-bottom: none;
 	}//lc
 
-	@media (min-width: 402px) {
-		margin-right: 20px;
-	
-	}//mq
-
-	@media (min-width: 761px) {
+	@media (min-width: 700px) {
 		display: inline;
+		margin-right: 20px;
+		border-bottom: 0px;
 	
 		&:hover {
-			padding: 40px 10px 30px 20px;
 			color: $site-gold;
-			margin-right: 10px;
 		}
 	}//mq
 
 	&:last-child {
 		margin-right: 0px;
-	}
-}
+
+		&:hover {
+			padding: 30px 15px;
+margin-right: -15px;
+margin-left: -15px;
+
+		}//hover
+	}//last-child
+}//nav-link-item
 
 .visible {
 	display: block;
+	overflow-y: scroll;
+	max-height: 330px;
+
 	.nav-link-item {
 		display: block;
 	}
@@ -256,30 +266,32 @@ header {
 	padding: 20px 20px 25px 20px;
 	@include pie-clearfix;
 
-	@media (min-width: 402px) {
+	@media (min-width: 700px) {
 		padding: 0px;
-	}
-}
+		height: 0px;
+	}//mq
+}//nav-chrome
 
 .hood-list {
 	position: relative;
 	display: none;
 	margin-left: -20px;
 	background-color: #3d3d3d;
-	padding-top: 10px;
-	margin-top: 20px;
+	// padding-top: 10px;
+	// margin-top: 20px;
 	border-top: 1px solid #222;
 
-	@media (min-width: 402px) {
-	background-color: #191919;
-	padding: 20px 30px 20px 20px;
-	max-width: 230px;
-	z-index: 22222222;
-	width: 115%;
-	color: $site-tan;
-	position: absolute;
-	display: none;
-	top: 51px;
+	@media (min-width: 700px) {
+		background-color: #191919;
+		max-width: 300px;
+		z-index: 22222222;
+		color: $site-tan;
+		position: absolute;
+		display: none;
+		top: 51px;
+		border-top: 0px;
+		width: 124%;
+		margin-left: -50px;
 
 		a {
 			&:hover {
@@ -291,10 +303,16 @@ header {
 }
 
 .hood-list-item {
-	margin: 10px 0px 20px 0px;
 	font: 200 14px/140% $sans;
-	padding: 0px 0px 20px 20px;
+	padding: 0px 0px 0px 20px;
 	border-bottom: 1px solid #2d2d2d;
+
+	@media (min-width: 700px) {
+		margin: 10px 0px 10px 0px;
+		border-bottom: 0px;
+		min-width: 600px;
+		width: 100%;
+	}//mq 700
 }
 
 .m-nav-mod {
@@ -311,8 +329,8 @@ header {
 	float: right;
 	display: block;
 	background-color: #2d2d2d;
-	padding: 25px 25px 20px 25px;
-	margin: -15px -25px -25px 0px;
+	padding: 30px 25px 20px 25px;
+	margin: -20px -25px -25px 0px;
 
 	a {
 		@include opacity(.2);

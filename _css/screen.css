@@ -543,32 +543,28 @@ header {
   display: none;
   float: right;
 }
-@media (min-width: 402px) {
+@media (min-width: 700px) {
   .nav-link-mod {
     display: inline;
     float: right;
     padding-top: 8px;
     position: relative;
-  }
-}
-@media (min-width: 761px) {
-  .nav-link-mod {
-    display: inline;
+    background-color: transparent;
+    width: auto;
   }
 }
 @media (min-width: 402px) {
   .nav-link-mod > .nav-link-item:hover {
-    background-color: #191919;
-    padding-top: 30px;
+    padding-top: 0px;
   }
   .nav-link-mod > .nav-link-item:hover:last-child {
-    background-color: #231f20;
-    padding: 0px;
+    background-color: #191919;
+    padding: 30px 15px;
   }
-  .nav-link-mod > .nav-link-item:hover ul {
+  .nav-link-mod > .nav-link-item:hover .hood-list {
     background-color: #191919;
     display: block;
-    padding: 10px 0px 20px 20px;
+    padding: 10px 20px 20px 20px;
   }
 }
 
@@ -578,33 +574,47 @@ header {
   letter-spacing: 2px;
   color: #ececda;
   display: none;
-  padding: 20px 0px 20px 20px;
   border-bottom: 1px solid #222;
+}
+.nav-link-item a {
+  padding: 20px 0px 20px 20px;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 760px) {
+  .nav-link-item a {
+    padding: 0px;
+    display: inline;
+    width: auto;
+    padding-right: 15px;
+  }
 }
 .nav-link-item:last-child {
   border-bottom: none;
 }
-@media (min-width: 402px) {
-  .nav-link-item {
-    margin-right: 20px;
-  }
-}
-@media (min-width: 761px) {
+@media (min-width: 700px) {
   .nav-link-item {
     display: inline;
+    margin-right: 20px;
+    border-bottom: 0px;
   }
   .nav-link-item:hover {
-    padding: 40px 10px 30px 20px;
     color: #7c735b;
-    margin-right: 10px;
   }
 }
 .nav-link-item:last-child {
   margin-right: 0px;
 }
+.nav-link-item:last-child:hover {
+  padding: 30px 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
 .visible {
   display: block;
+  overflow-y: scroll;
+  max-height: 330px;
 }
 .visible .nav-link-item {
   display: block;
@@ -619,9 +629,10 @@ header {
   display: table;
   clear: both;
 }
-@media (min-width: 402px) {
+@media (min-width: 700px) {
   .nav-chrome {
     padding: 0px;
+    height: 0px;
   }
 }
 
@@ -630,21 +641,20 @@ header {
   display: none;
   margin-left: -20px;
   background-color: #3d3d3d;
-  padding-top: 10px;
-  margin-top: 20px;
   border-top: 1px solid #222;
 }
-@media (min-width: 402px) {
+@media (min-width: 700px) {
   .hood-list {
     background-color: #191919;
-    padding: 20px 30px 20px 20px;
-    max-width: 230px;
+    max-width: 300px;
     z-index: 22222222;
-    width: 115%;
     color: #ececda;
     position: absolute;
     display: none;
     top: 51px;
+    border-top: 0px;
+    width: 124%;
+    margin-left: -50px;
   }
   .hood-list a:hover {
     color: #7c735b;
@@ -652,10 +662,17 @@ header {
 }
 
 .hood-list-item {
-  margin: 10px 0px 20px 0px;
   font: 200 14px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
-  padding: 0px 0px 20px 20px;
+  padding: 0px 0px 0px 20px;
   border-bottom: 1px solid #2d2d2d;
+}
+@media (min-width: 700px) {
+  .hood-list-item {
+    margin: 10px 0px 10px 0px;
+    border-bottom: 0px;
+    min-width: 600px;
+    width: 100%;
+  }
 }
 
 .m-nav-mod {
@@ -673,8 +690,8 @@ header {
   float: right;
   display: block;
   background-color: #2d2d2d;
-  padding: 25px 25px 20px 25px;
-  margin: -15px -25px -25px 0px;
+  padding: 30px 25px 20px 25px;
+  margin: -20px -25px -25px 0px;
 }
 .toggle-active a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);

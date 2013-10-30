@@ -4,21 +4,30 @@ $(document).ready(function() {
 var scroll_pos = 0;
 var scroll_time;
 
+var wWidth;
+wWidth = $(window).width();
+
+$(window).resize(function(){
+    wWidth = $(window).width();
+});
+
 $(window).scroll(function() {
-    clearTimeout(scroll_time);
-    var current_scroll = $(window).scrollTop();
-    
-    if (current_scroll >= $('#top-nav').outerHeight()) {
-        if (current_scroll <= scroll_pos) {
-            $('#top-nav').removeClass('hidden');    
+    if (wWidth > 400) {
+        clearTimeout(scroll_time);
+        var current_scroll = $(window).scrollTop();
+        
+        if (current_scroll >= $('#top-nav').outerHeight()) {
+            if (current_scroll <= scroll_pos) {
+                $('#top-nav').removeClass('hidden');    
+            }
+            else {
+                $('#top-nav').addClass('hidden');  
+            }
         }
-        else {
-            $('#top-nav').addClass('hidden');  
-        }
+        scroll_time = setTimeout(function() {
+            scroll_pos = $(window).scrollTop();
+        }, 25);
     }
-    scroll_time = setTimeout(function() {
-        scroll_pos = $(window).scrollTop();
-    }, 25);
 });
 
     //Mobile nav toggling action-action-action
@@ -48,8 +57,13 @@ $(window).scroll(function() {
     });
 
     //when locations is clicked at mobile size add class visible-m-link
-    $(".nav-link-item").click(function() {
+    $("#locations-link").click(function(e) {
+         e.preventDefault();
     	 $(".hood-list").toggleClass('visible-m-link');
+    });
+
+    $('#about-link').click(function(){
+        $('.m-nav-toggle').trigger('click');
     });
 
    
