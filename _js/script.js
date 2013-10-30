@@ -24,7 +24,8 @@ $(window).scroll(function() {
     //Mobile nav toggling action-action-action
 	$(".m-nav-toggle").click(function(){
 	  	console.log('clicked');
-	    $("#nav-link-mod").toggleClass("visible");
+	    $(".nav-link-mod").toggleClass("visible");
+	    $(".m-nav-toggle").toggleClass('toggle-active');
 	});
 
     //detect click on a location - then filter results based on specific location
@@ -45,6 +46,13 @@ $(window).scroll(function() {
            $("."+location).show()       
         }
     });
+
+    //when locations is clicked at mobile size add class visible-m-link
+    $(".nav-link-item").click(function() {
+    	 $(".hood-list").toggleClass('visible-m-link');
+    });
+
+   
 
     //when viewport reaches about section ball (set up alert box when position reached to test) (testing for position of element relative to viewport) (set up console.log to see what position is)
 
