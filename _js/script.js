@@ -62,9 +62,13 @@ $(window).scroll(function() {
     	 $(".hood-list").toggleClass('visible-m-link');
     });
 
-    $('#about-link').click(function(){
-        $('.m-nav-toggle').trigger('click');
-    });
+
+
+    if (wWidth < 700) {
+	    $('#about-link').click(function(){
+	        $('.m-nav-toggle').trigger('click');
+	    });
+	}  
 
    
 
