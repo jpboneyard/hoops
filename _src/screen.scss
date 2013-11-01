@@ -254,6 +254,18 @@ header {
 	overflow-y: scroll;
 	max-height: 330px;
 
+	@media (min-height: 600px) {
+		max-height: 510px;
+	}//mq
+
+	@media (min-height: 800px) {
+		max-height: 690px;
+	}//mq
+
+	@media (min-height: 1000px) {
+		max-height: 870px;
+	}//mq
+
 	.nav-link-item {
 		display: block;
 	}
@@ -516,17 +528,19 @@ header {
 }
 
 .fixed-ball {
-	position: fixed;
-	pointer-events: none;
-	z-index: 1;
-	top: 0%;
-	left: 0%;
+	// position: fixed;
+	// pointer-events: none;
+	// z-index: 1;
+	// top: 0%;
+	// left: 0%;
 }
 
 .absolute-ball {
 	position: absolute;
-	bottom: 43%;
-	left: 0%;
+	// bottom: 43%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
 }
 
 .call-to-action {

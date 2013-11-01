@@ -614,6 +614,21 @@ header {
   overflow-y: scroll;
   max-height: 330px;
 }
+@media (min-height: 600px) {
+  .visible {
+    max-height: 510px;
+  }
+}
+@media (min-height: 800px) {
+  .visible {
+    max-height: 690px;
+  }
+}
+@media (min-height: 1000px) {
+  .visible {
+    max-height: 870px;
+  }
+}
 .visible .nav-link-item {
   display: block;
 }
@@ -876,18 +891,11 @@ header {
   pointer-events: none;
 }
 
-.fixed-ball {
-  position: fixed;
-  pointer-events: none;
-  z-index: 1;
-  top: 0%;
-  left: 0%;
-}
-
 .absolute-ball {
   position: absolute;
-  bottom: 43%;
-  left: 0%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .call-to-action {

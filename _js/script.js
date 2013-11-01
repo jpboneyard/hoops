@@ -77,15 +77,30 @@ $(window).scroll(function() {
 
     //becomes position absolute
 	$(window).scroll(function() {
-	   if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
-	       $(".site-ball-mod").addClass('absolute-ball');
-	       $(".site-ball-mod").removeClass('fixed-ball');
-	       // alert("near bottom!");
-	   }
-	   else {
-	       $(".site-ball-mod").removeClass('absolute-ball');
-	       $(".site-ball-mod").addClass('fixed-ball');
-	   }
+
+        var bballtop = $(window).scrollTop();
+
+        
+
+        var stop = $('.about-txt-mod .kicker').offset().top - ($('.site-ball-mod').height()*0.65);
+
+        if(bballtop > stop) {
+            // do nothing
+            $('.site-ball-mod').css('margin-top', stop);
+        } else {
+            $('.site-ball-mod').css('margin-top', bballtop);
+        }
+
+
+	   // if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
+	   //     $(".site-ball-mod").addClass('absolute-ball');
+	   //     $(".site-ball-mod").removeClass('fixed-ball');
+	   //     // alert("near bottom!");
+	   // }
+	   // else {
+	   //     $(".site-ball-mod").removeClass('absolute-ball');
+	   //     $(".site-ball-mod").addClass('fixed-ball');
+	   // }
 	});
 
     //when the page loads...
