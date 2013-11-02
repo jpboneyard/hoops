@@ -532,7 +532,7 @@ header {
 .nav-link-mod {
   display: none;
   background-color: #2c2c2c;
-  min-width: 330px;
+  min-width: 275px;
   display: none;
   float: right;
 }
@@ -831,18 +831,23 @@ header {
 /*	About  								   	     */
 /* ============================================= */
 #about {
-  padding: 60px 20px 40px 20px;
+  padding: 100px 20px 40px 20px;
   background-color: #14A798;
   position: relative;
 }
-@media (min-width: 760px) {
+@media (min-width: 600px) {
   #about {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 }
 @media (min-width: 900px) {
   #about {
     padding: 150px 20px 40px 20px;
+  }
+}
+@media (min-width: 1300px) {
+  #about {
+    padding: 200px 20px 40px 20px;
   }
 }
 
@@ -895,7 +900,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .call-to-action {
