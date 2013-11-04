@@ -462,7 +462,7 @@ header {
 }
 @media (min-width: 760px) {
   #top-nav {
-    padding: 20px;
+    padding: 20px 60px;
   }
 }
 
