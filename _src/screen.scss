@@ -65,6 +65,13 @@ h3 {
 	}
 }
 
+.body-txt,bio-txt {
+
+	@media (min-width: 900px) {
+		text-align: justify;
+	}//mq
+}
+
 .bio-txt {
 	@include opacity(.5);
 	font-style: italic;
@@ -655,7 +662,8 @@ footer {
 }
 
 .social-list {
-	margin-bottom: 20px;
+	margin-top: 40px;
+	text-align: center;
 }
 
 .social-item {

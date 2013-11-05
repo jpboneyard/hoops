@@ -402,6 +402,12 @@ h3 {
   text-decoration: underline;
 }
 
+@media (min-width: 900px) {
+  .body-txt, bio-txt {
+    text-align: justify;
+  }
+}
+
 .bio-txt {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -1018,7 +1024,8 @@ footer h3 {
 }
 
 .social-list {
-  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .social-item {
