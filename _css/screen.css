@@ -620,6 +620,18 @@ header {
   overflow-y: scroll;
   max-height: 330px;
 }
+.visible .nav-link-item {
+  display: block;
+}
+@media (min-width: 760px) {
+  .visible {
+    display: inline;
+    overflow-y: visible;
+  }
+  .visible .nav-link-item {
+    display: inline;
+  }
+}
 @media (min-height: 600px) {
   .visible {
     max-height: 510px;
@@ -634,9 +646,6 @@ header {
   .visible {
     max-height: 870px;
   }
-}
-.visible .nav-link-item {
-  display: block;
 }
 
 .nav-chrome {
@@ -716,6 +725,11 @@ header {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
+@media (min-width: 760px) {
+  .toggle-active {
+    display: none;
+  }
+}
 
 .active-link {
   color: #7c735b;
@@ -723,6 +737,11 @@ header {
 
 .visible-m-link {
   display: block;
+}
+@media (min-width: 760px) {
+  .visible-m-link {
+    display: none;
+  }
 }
 
 /* ============================================= */

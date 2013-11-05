@@ -186,7 +186,7 @@ header {
 		position: relative;
 		background-color: transparent;
 		width: auto;
-	}
+	}//mq
 
 	.nav-link-item {
 		@media (min-width: 760px) {
@@ -261,6 +261,20 @@ header {
 	overflow-y: scroll;
 	max-height: 330px;
 
+	.nav-link-item {
+			display: block;
+		}
+
+	@media (min-width: 760px) {
+		display: inline;
+		overflow-y: visible;
+		.nav-link-item {
+			display: inline;
+		}
+	}
+
+
+
 	@media (min-height: 600px) {
 		max-height: 510px;
 	}//mq
@@ -272,10 +286,6 @@ header {
 	@media (min-height: 1000px) {
 		max-height: 870px;
 	}//mq
-
-	.nav-link-item {
-		display: block;
-	}
 }
 
 .nav-chrome {
@@ -351,6 +361,10 @@ header {
 	a {
 		@include opacity(.2);
 	}
+
+	@media (min-width: 760px) {
+		display: none;
+	}//mq760
 }
 
 .active-link {
@@ -359,6 +373,10 @@ header {
 
 .visible-m-link {
 	display: block;
+
+	@media (min-width:760px) {
+		display: none;
+	}//mq
 }
 
 
