@@ -265,6 +265,11 @@ header {
 		max-height: 510px;
 	}//mq
 
+	@media (min-width: 760px) {
+		max-height: inherit;
+		overflow-y: visible;
+	}
+
 	@media (min-height: 800px) {
 		max-height: 690px;
 	}//mq
@@ -275,7 +280,11 @@ header {
 
 	.nav-link-item {
 		display: block;
-	}
+
+		@media (min-width: 760px) {
+			display: inline;
+		}//mq
+	}//nav-link-item
 }
 
 .nav-chrome {
@@ -351,6 +360,10 @@ header {
 	a {
 		@include opacity(.2);
 	}
+
+	@media (min-width: 760px) {
+		display: none;
+	}//mq
 }
 
 .active-link {
@@ -359,6 +372,10 @@ header {
 
 .visible-m-link {
 	display: block;
+
+	@media (min-width: 760px) {
+		display: none;
+	}//mq
 }
 
 

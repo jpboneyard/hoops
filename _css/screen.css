@@ -625,6 +625,12 @@ header {
     max-height: 510px;
   }
 }
+@media (min-width: 760px) {
+  .visible {
+    max-height: inherit;
+    overflow-y: visible;
+  }
+}
 @media (min-height: 800px) {
   .visible {
     max-height: 690px;
@@ -637,6 +643,11 @@ header {
 }
 .visible .nav-link-item {
   display: block;
+}
+@media (min-width: 760px) {
+  .visible .nav-link-item {
+    display: inline;
+  }
 }
 
 .nav-chrome {
@@ -716,6 +727,11 @@ header {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
+@media (min-width: 760px) {
+  .toggle-active {
+    display: none;
+  }
+}
 
 .active-link {
   color: #7c735b;
@@ -723,6 +739,11 @@ header {
 
 .visible-m-link {
   display: block;
+}
+@media (min-width: 760px) {
+  .visible-m-link {
+    display: none;
+  }
 }
 
 /* ============================================= */
