@@ -955,7 +955,7 @@ header {
 /*	Hoop Styles							   	     */
 /* ============================================= */
 .hoop-1 .item-details {
-  background-color: #B5494F;
+  background-color: #4E445B;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -966,7 +966,7 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #9c3f44;
+  background-color: #3c3547;
 }
 
 .hoop-2 .item-details {

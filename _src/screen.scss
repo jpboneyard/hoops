@@ -598,12 +598,12 @@ header {
 
 .hoop-1 {
 	.item-details {
-		background-color: #B5494F;
+		background-color: #4E445B;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#b5494f, 7%);
+			background-color: darken(#4E445B, 7%);
 		}//hover
 	}//item-details
 }//hoop

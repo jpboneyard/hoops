@@ -82,7 +82,7 @@ $(document).ready(function() {
 
 		var bballtop = $(window).scrollTop();
 
-		var stop = $('.about-txt-mod .kicker').offset().top - ($('.site-ball-mod').height()*0.65);
+		var stop = $('.about-txt-mod .kicker').offset().top - ($('.site-ball-mod').height()*0.64);
 
 		if(bballtop > stop) {
 			// do nothing
