@@ -747,6 +747,30 @@ header {
 }
 
 /* ============================================= */
+/*	Intro: 								   		 */
+/* ============================================= */
+.intro {
+  background-color: #605472;
+  *zoom: 1;
+}
+.intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.intro h2 {
+  font: 600 40px/150% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  color: #ececda;
+}
+
+.intro-img-mod {
+  float: left;
+}
+
+/* ============================================= */
 /*	Hoop Feed							   		 */
 /* ============================================= */
 .hoop-stream-mod img {
@@ -970,7 +994,7 @@ header {
 }
 
 .hoop-2 .item-details {
-  background-color: #20998C;
+  background-color: #dbbd64;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -981,7 +1005,7 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1a7b71;
+  background-color: #d4b147;
 }
 
 .hoop-3 .item-details {
@@ -1000,7 +1024,7 @@ header {
 }
 
 .hoop-4 .item-details {
-  background-color: #dbbd64;
+  background-color: #20998C;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1011,7 +1035,7 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #d4b147;
+  background-color: #1a7b71;
 }
 
 /* ============================================= */
@@ -1077,7 +1101,7 @@ footer h3 {
 }
 
 /* ============================================= */
-/*	404 PAge								   	 */
+/*	404 Page								   	 */
 /* ============================================= */
 .error-page {
   background-color: #2d2d2d;
@@ -1086,7 +1110,7 @@ footer h3 {
   color: #7c735b;
   positon: relative;
   overflow: hidden;
-  margin: 20% 20px 20px 20px;
+  margin: 60px 20px 20px 20px;
 }
 .error-page h1 {
   margin-bottom: 5px;
@@ -1131,23 +1155,21 @@ footer h3 {
 }
 
 .error-hoop {
-  position: absolute;
-  max-width: 800px;
+  max-width: 1200px;
   height: auto;
   width: 100%;
-  top: 0px;
-  left: 0px;
+  margin: 0 auto;
 }
 
 .error-rim {
-  -webkit-animation: hinge 2s normal forwards ease-in-out;
-  -moz-animation: hinge 25s normal forwards ease-in-out;
-  -o-animation: hinge 2s normal forwards ease-in-out;
-  max-width: 150px;
-  width: 100%;
+  -webkit-animation: hinge 5s normal forwards ease-in-out;
+  -moz-animation: hinge 5s normal forwards ease-in-out;
+  -o-animation: hinge 5s normal forwards ease-in-out;
+  max-width: 250px;
+  width: 25%;
   position: absolute;
-  left: 20%;
-  top: 20%;
+  left: 40%;
+  top: 55%;
 }
 
 /* ============================================= */
@@ -1253,7 +1275,7 @@ footer h3 {
 }
 
 @-webkit-keyframes hinge {
-  0% {
+  5% {
     -webkit-transform: rotate(0);
     -webkit-transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
@@ -1285,7 +1307,7 @@ footer h3 {
 }
 
 @-moz-keyframes hinge {
-  0% {
+  5% {
     -moz-transform: rotate(0);
     -moz-transform-origin: top left;
     -moz-animation-timing-function: ease-in-out;
@@ -1317,7 +1339,7 @@ footer h3 {
 }
 
 @-o-keyframes hinge {
-  0% {
+  5% {
     -o-transform: rotate(0);
     -o-transform-origin: top left;
     -o-animation-timing-function: ease-in-out;
@@ -1349,7 +1371,7 @@ footer h3 {
 }
 
 @keyframes hinge {
-  0% {
+  5% {
     transform: rotate(0);
     transform-origin: top left;
     animation-timing-function: ease-in-out;

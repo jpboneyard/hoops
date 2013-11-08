@@ -61,6 +61,34 @@ $(document).ready(function() {
 		}
 	});
 
+    $(".hood-list-item a").not('.except-me').each(function() {
+        var $this = $(this);
+
+        // console.log($this);
+
+        var location = $this.data("location");
+
+        // console.log(location);
+
+        var searchString = ".stream-item[data-location='" + location + "']";
+
+        // console.log(searchString);
+
+        var location_count = $(searchString).length;
+
+        // console.log(location_count);
+
+        if(location_count == 0) {
+            $this.parent().hide();
+        } else {
+            $this.find(".location-count").text("(" + location_count + ")");
+        }
+
+    });
+
+    var num_locations = $(".stream-item").length;
+    $(".hood-list-item a[data-location='all'] .location-count").text("(" + num_locations + ")");
+
 	//when locations is clicked at mobile size add class visible-m-link
 	$("#locations-link").click(function(e) {
 		e.preventDefault();	
