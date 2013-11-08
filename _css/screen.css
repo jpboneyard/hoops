@@ -750,24 +750,12 @@ header {
 /*	Intro: 								   		 */
 /* ============================================= */
 .intro {
-  background-color: #605472;
-  *zoom: 1;
-}
-.intro:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.intro h2 {
-  font: 600 40px/150% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 15px;
-  color: #ececda;
+  position: relative;
+  z-index: 3;
 }
 
-.intro-img-mod {
-  float: left;
+.intro-img-mod img {
+  width: 100%;
 }
 
 /* ============================================= */
@@ -994,7 +982,7 @@ header {
 }
 
 .hoop-2 .item-details {
-  background-color: #dbbd64;
+  background-color: #F7C657;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1005,11 +993,11 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #d4b147;
+  background-color: #f5ba35;
 }
 
 .hoop-3 .item-details {
-  background-color: #333433;
+  background-color: #b7484d;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1020,7 +1008,7 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #212221;
+  background-color: #9d3e42;
 }
 
 .hoop-4 .item-details {

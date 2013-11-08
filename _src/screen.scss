@@ -384,20 +384,14 @@ header {
 /* ============================================= */
 
 .intro {
-	background-color: #605472;
-	@include pie-clearfix;
-
-	h2 {
-		font: 600 40px/150% $sans;
-		text-transform: uppercase;
-		letter-spacing: 4px;
-		margin-bottom: 15px;
-		color: $site-tan;
-	}//h2
+	position: relative;
+	z-index: 3;
 }//intro
 
 .intro-img-mod {
-	float: left;
+	img {
+		width: 100%;
+	}
 }
 
 
@@ -633,24 +627,24 @@ header {
 
 .hoop-2 {
 	.item-details {
-		background-color: #dbbd64;
+		background-color: #F7C657;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#dbbd64, 7%);
+			background-color: darken(#F7C657, 7%);
 		}//hover
 	}//item-details
 }//hoop
 
 .hoop-3 {
 	.item-details {
-		background-color: #333433;
+		background-color: #b7484d;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#333433, 7%);
+			background-color: darken(#b7484d, 7%);
 		}//hover
 	}//item-details
 }//hoop
