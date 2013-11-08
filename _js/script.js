@@ -87,7 +87,7 @@ $(document).ready(function() {
     });
 
     var num_locations = $(".stream-item").length;
-    $(".hood-list-item a[data-location='all'] .location-count").text("(" + num_locations + ")");
+    $(".hood-list-item a[data-location='all'] .location-count").text("(" + (num_locations - 1) + ")");
 
 	//when locations is clicked at mobile size add class visible-m-link
 	$("#locations-link").click(function(e) {
