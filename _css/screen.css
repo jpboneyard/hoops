@@ -870,23 +870,25 @@ header {
 /*	About  								   	     */
 /* ============================================= */
 #about {
-  padding: 100px 20px 40px 20px;
+  padding: 60px 20px 40px 20px;
   background-color: #14A798;
   position: relative;
+  z-index: 3;
 }
 @media (min-width: 600px) {
   #about {
     padding-top: 120px;
+    z-index: 1;
   }
 }
 @media (min-width: 900px) {
   #about {
-    padding: 150px 20px 40px 20px;
+    padding: 150px 20px 80px 20px;
   }
 }
 @media (min-width: 1300px) {
   #about {
-    padding: 200px 20px 40px 20px;
+    padding: 200px 20px 90px 20px;
   }
 }
 

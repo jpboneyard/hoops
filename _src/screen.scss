@@ -510,20 +510,22 @@ header {
 /* ============================================= */
 
 #about {
-	padding: 100px 20px 40px 20px;
+	padding: 60px 20px 40px 20px;
 	background-color: #14A798;
 	position: relative;
+	z-index: 3;
 
 	@media (min-width: 600px) {
 		padding-top: 120px;
+		z-index: 1;
 	}//mq
 
 	@media (min-width: 900px) {
-		padding: 150px 20px 40px 20px;
+		padding: 150px 20px 80px 20px;
 	}//mq
 
 	@media (min-width: 1300px) {
-		padding: 200px 20px 40px 20px;
+		padding: 200px 20px 90px 20px;
 	}//mq
 }//about
 
