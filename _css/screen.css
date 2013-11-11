@@ -398,34 +398,32 @@ h3 {
     font-size: 19px;
   }
 }
-.body-txt a, bio-txt a, dropcap a {
-  text-decoration: underline;
-}
 
 @media (min-width: 900px) {
   .body-txt, bio-txt {
     text-align: justify;
   }
 }
+.body-txt a, bio-txt a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.body-txt a:hover, bio-txt a:hover {
+  color: #c9c997;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .bio-txt {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
   font-style: italic;
-}
-.bio-txt a {
-  text-decoration: underline;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.bio-txt a:hover {
-  color: #231f20;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .dropcap {
@@ -1014,7 +1012,7 @@ header {
 }
 
 .hoop-4 .item-details {
-  background-color: #20998C;
+  background-color: #333433;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1025,7 +1023,22 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #1a7b71;
+  background-color: #212221;
+}
+
+.hoop-5 .item-details {
+  background-color: #2C4152;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-5 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #202f3b;
 }
 
 /* ============================================= */
@@ -1066,8 +1079,8 @@ footer h3 {
 .social-item {
   display: inline;
   margin-right: 15px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;

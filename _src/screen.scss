@@ -59,10 +59,6 @@ h3 {
 	@media (min-width: 600px) {
 		font-size: 19px;
 	}//mq
-
-	a {
-		text-decoration: underline;
-	}
 }
 
 .body-txt,bio-txt {
@@ -70,22 +66,23 @@ h3 {
 	@media (min-width: 900px) {
 		text-align: justify;
 	}//mq
-}
-
-.bio-txt {
-	@include opacity(.5);
-	font-style: italic;
 
 	a {
-		text-decoration: underline;
+		text-decoration: none;
+		border-bottom: 1px dotted;
 		@include trans;
 
 		&:hover {
-			color: $site-black;
+			color: darken($site-tan, 20%);
 			@include trans;
 		}//hover
 	}//a
-}//bio-txt
+}
+
+.bio-txt {
+	@include opacity(.7);
+	font-style: italic;
+}
 
 .dropcap {
 	display: block;
@@ -574,14 +571,6 @@ header {
 	pointer-events: none;
 }
 
-.fixed-ball {
-	// position: fixed;
-	// pointer-events: none;
-	// z-index: 1;
-	// top: 0%;
-	// left: 0%;
-}
-
 .absolute-ball {
 	position: absolute;
 	top: 0;
@@ -625,7 +614,7 @@ header {
 			background-color: darken(#4E445B, 7%);
 		}//hover
 	}//item-details
-}//hoop
+}//hoop-1
 
 .hoop-2 {
 	.item-details {
@@ -637,7 +626,7 @@ header {
 			background-color: darken(#F7C657, 7%);
 		}//hover
 	}//item-details
-}//hoop
+}//hoop-2
 
 .hoop-3 {
 	.item-details {
@@ -649,19 +638,33 @@ header {
 			background-color: darken(#b7484d, 7%);
 		}//hover
 	}//item-details
-}//hoop
+}//hoop-3
 
 .hoop-4 {
 	.item-details {
-		background-color: #20998C;
+		background-color: #333433;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#20998C, 7%);
+			background-color: darken(#333433, 7%);
 		}//hover
 	}//item-details
-}//hoop
+}//hoop-4
+
+.hoop-5 {
+	.item-details {
+		background-color: #2C4152;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#2C4152, 7%);
+		}//hover
+	}//item-details
+}//hoop-4
+
+
 
 
 /* ============================================= */
@@ -705,7 +708,7 @@ footer {
 .social-item {
 	display: inline;
 	margin-right: 15px;
-	@include opacity(.8);
+	@include opacity(.7);
 	@include trans;
 
 	&:last-child {
