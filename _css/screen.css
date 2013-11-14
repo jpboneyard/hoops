@@ -778,6 +778,17 @@ header {
   z-index: 222;
 }
 
+.scroll-arrow {
+  max-width: 40px;
+  position: absolute;
+  bottom: 25px;
+  z-index: 666;
+  left: 50%;
+}
+.scroll-arrow img {
+  max-width: 100%;
+}
+
 /* ============================================= */
 /*	Hoop Feed							   		 */
 /* ============================================= */
@@ -961,6 +972,12 @@ header {
   z-index: 444;
   max-width: 800px;
   margin: 0 auto;
+  /*	&:before {
+  		content:url(../_img/envelope-cut.png);
+  		position: absolute;
+  		top: 0px;
+  		width: 200px;
+  	}*/
 }
 
 .envelope-top {
@@ -973,7 +990,16 @@ header {
   z-index: 222;
   margin: 0 auto;
   max-width: 800px;
-  margin-top: -210px;
+  margin-top: -300px;
+}
+
+.envelope-cut {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  z-index: 444;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .mug-mod {
