@@ -811,7 +811,7 @@ header {
   color: #fff;
   padding: 16px;
   text-align: center;
-  z-index: 30000;
+  z-index: 1;
   position: relative;
 }
 @media (min-width: 600px) {
@@ -906,9 +906,9 @@ header {
   position: relative;
   z-index: 333;
 }
-@media (min-width: 1300px) {
+@media (min-width: 900px) {
   #about {
-    padding: 150px 20px 0px 20px;
+    padding: 120px 20px 0px 20px;
   }
 }
 
@@ -935,9 +935,9 @@ header {
   position: relative;
   z-index: 333;
   background-color: #EFEFE4;
-  -moz-box-shadow: 7px 14px 0px 7px rgba(79, 67, 96, 0.3);
-  -webkit-box-shadow: 7px 14px 0px 7px rgba(79, 67, 96, 0.3);
-  box-shadow: 7px 14px 0px 7px rgba(79, 67, 96, 0.3);
+  -moz-box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
+  -webkit-box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
+  box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -956,9 +956,6 @@ header {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.about-txt-mod:hover #about {
-  margin-top: 200px;
-}
 
 .about-signature img {
   width: 100%;
@@ -967,11 +964,12 @@ header {
 .envelope-btm {
   height: 300px;
   width: 100%;
-  background-color: #fff;
+  background-color: #d1d1d1;
   position: relative;
-  z-index: 444;
+  z-index: 222;
   max-width: 800px;
   margin: 0 auto;
+  margin-top: -300px;
   /*	&:before {
   		content:url(../_img/envelope-cut.png);
   		position: absolute;
@@ -990,7 +988,7 @@ header {
   z-index: 222;
   margin: 0 auto;
   max-width: 800px;
-  margin-top: -300px;
+  margin-top: -450px;
 }
 
 .envelope-cut {
@@ -1004,7 +1002,7 @@ header {
 
 .mug-mod {
   position: absolute;
-  left: -112px;
+  left: -190px;
   top: 350px;
   max-width: 400px;
 }

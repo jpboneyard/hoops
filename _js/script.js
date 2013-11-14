@@ -124,7 +124,7 @@ $(document).ready(function() {
 	// setTimout for ...whatever ms, 200
 		// that time tells page to scroll to top of #about
 	$('.about-txt-mod').on('mouseenter', function() {
-		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 200);
+		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 300);
 	});
 
 	//when the page loads...
