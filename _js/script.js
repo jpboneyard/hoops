@@ -120,6 +120,13 @@ $(document).ready(function() {
 		}
 	});
 
+	// mouseenter the about-txt-mod
+	// setTimout for ...whatever ms, 200
+		// that time tells page to scroll to top of #about
+	$('.about-txt-mod').on('mouseenter', function() {
+		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 200);
+	});
+
 	//when the page loads...
 	//if the window width < 761px
 	//then set the height of #nav-list-mod to the window height
