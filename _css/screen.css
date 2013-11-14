@@ -391,7 +391,7 @@ h3 {
 .body-txt, bio-txt, dropcap {
   font: 400 17px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 25px;
-  color: #ececda;
+  color: #231f20;
 }
 @media (min-width: 600px) {
   .body-txt, bio-txt, dropcap {
@@ -413,7 +413,7 @@ h3 {
   transition: all 0.2s ease-in-out;
 }
 .body-txt a:hover, bio-txt a:hover {
-  color: #c9c997;
+  color: #2f2937;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -430,7 +430,7 @@ h3 {
   display: block;
   float: left;
   font-size: 55px;
-  color: #ececda;
+  color: #615472;
   margin-right: 10px;
   margin-top: -3px;
 }
@@ -745,8 +745,24 @@ header {
 }
 
 /* ============================================= */
-/*	Intro: 								   		 */
+/*	Intro    							   		 */
 /* ============================================= */
+#intro {
+  /*	padding: 60px 20px 40px 20px;
+  */
+  background-color: #14A798;
+  position: relative;
+  z-index: 4;
+  /*	height: 666px;
+  */
+  *zoom: 1;
+}
+#intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .intro {
   position: relative;
   z-index: 3;
@@ -754,6 +770,12 @@ header {
 
 .intro-img-mod img {
   width: 100%;
+}
+
+.intro-title {
+  width: 100%;
+  position: relative;
+  z-index: 222;
 }
 
 /* ============================================= */
@@ -868,25 +890,14 @@ header {
 /*	About  								   	     */
 /* ============================================= */
 #about {
-  padding: 60px 20px 40px 20px;
-  background-color: #14A798;
+  padding: 60px 20px 0px 20px;
+  background-color: #17A2A5;
   position: relative;
-  z-index: 3;
-}
-@media (min-width: 600px) {
-  #about {
-    padding-top: 120px;
-    z-index: 1;
-  }
-}
-@media (min-width: 900px) {
-  #about {
-    padding: 150px 20px 80px 20px;
-  }
+  z-index: 333;
 }
 @media (min-width: 1300px) {
   #about {
-    padding: 200px 20px 90px 20px;
+    padding: 150px 20px 0px 20px;
   }
 }
 
@@ -907,16 +918,72 @@ header {
 }
 
 .about-txt-mod {
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
   padding: 0px 0px 40px 0px;
   position: relative;
-  z-index: 223;
+  z-index: 333;
+  background-color: #EFEFE4;
+  -moz-box-shadow: 7px 14px 0px 7px rgba(79, 67, 96, 0.3);
+  -webkit-box-shadow: 7px 14px 0px 7px rgba(79, 67, 96, 0.3);
+  box-shadow: 7px 14px 0px 7px rgba(79, 67, 96, 0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media (min-width: 760px) {
   .about-txt-mod {
-    padding-top: 80px;
+    padding: 80px 80px 90px 80px;
+    margin-bottom: -860px;
   }
+}
+.about-txt-mod:hover {
+  margin-bottom: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.about-txt-mod:hover #about {
+  margin-top: 200px;
+}
+
+.about-signature img {
+  width: 100%;
+}
+
+.envelope-btm {
+  height: 300px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 444;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.envelope-top {
+  width: 0;
+  height: 0;
+  border-left: 400px solid transparent;
+  border-right: 400px solid transparent;
+  border-bottom: 205px solid #ddd;
+  position: relative;
+  z-index: 222;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: -210px;
+}
+
+.mug-mod {
+  position: absolute;
+  left: -112px;
+  top: 350px;
+  max-width: 400px;
+}
+.mug-mod img {
+  width: 100%;
 }
 
 .site-ball-mod {
@@ -952,9 +1019,10 @@ header {
 
 .blimp {
   z-index: 22;
-  margin-top: -36%;
+  margin-top: 10px;
   max-width: 160px;
-  position: relative;
+  position: absolute;
+  top: 43%;
   display: none;
 }
 @media (min-width: 1000px) {
@@ -1072,7 +1140,7 @@ footer h3 {
 }
 
 .social-list {
-  margin-top: 40px;
+  margin: 40px 0px;
   text-align: center;
 }
 
@@ -1228,7 +1296,7 @@ footer h3 {
 
 @-webkit-keyframes blimp {
   0% {
-    margin-left: 1500px;
+    margin-left: 1200px;
   }
 
   100% {
@@ -1238,7 +1306,7 @@ footer h3 {
 
 @-moz-keyframes blimp {
   0% {
-    margin-left: 1500px;
+    margin-left: 1200px;
   }
 
   100% {
@@ -1248,7 +1316,7 @@ footer h3 {
 
 @-o-keyframes blimp {
   0% {
-    margin-left: 1500px;
+    margin-left: 1200px;
   }
 
   100% {

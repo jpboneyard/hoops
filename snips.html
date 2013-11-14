@@ -198,3 +198,76 @@ g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js
 s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 
+
+
+
+
+      <section id="about">
+        <div class="about-txt-mod">
+          <h4 class="kicker">Hoops Origin Story</h4>
+          <span class="dropcap">T</span><p class="body-txt">he hoops project grew out of my first experience playing basketball in the spring of 2013. As a newcomer I wanted to find new hoops in the city, document the places to ball and share that information with the community, especially the other newcomers. Y'all can catch new hoops being added once-a-week and new features being added over time. Eventually I'd love to see this project extend beyond the city of Boston. Please <a href="mailto:john@jpboneyard.com" subject="I'd like to rep my cities hoops!">get in touch</a> if you'd like to rep your city!</p>
+
+          <p class="body-txt bio-txt"><a href="http://jpboneyard.com" target="_blank">John Boilard</a> is a person from Boston, MA who designs for print and the web. He is a basketball enthusiast who's pretty good on defense (still working on that jump shot) and the producer of a traveling poster show called <a href="http://nationalposterretrospecticus.com/" target="_blank">The National Poster Retrospecticus</a>. </p>
+
+        <ul class="social-list">
+          <li class="social-item"><a href="http://dribbble.com/jpboneyard" target="_blank"><img class="social-item-img" src="_img/_icons/social-dribbble-2.png"></li></a>
+          <li class="social-item"><a href="http://jpboneyard.tumblr.com/" target="_blank"><img class="social-item-img" src="_img/_icons/social-tumblr-2.png"></li></a>  
+          <li class="social-item"><a href="https://twitter.com/jpboneyard" target="_blank"><img class="social-item-img" src="_img/_icons/social-twitter-2.png"></li>  </a>
+          <li class="social-item"><a href="http://instagram.com/jpboneyard" target="_blank"><img class="social-item-img" src="_img/_icons/social-instagram-2.png"></li></a>   
+        </ul> <!-- /social-mod -->
+        </div> <!-- /about-txt-mod -->
+        <img class="blimp-animation blimp" src="_img/blimp-2.png"/>
+        <img class="about-bg-front" src="_img/about-bg-front.png"/>
+        <img class="about-bg" src="_img/about-bg.png"/>
+      </section> <!-- /about -->  
+
+
+
+
+#about {
+  padding: 60px 20px 40px 20px;
+  background-color: #14A798;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: 600px) {
+    padding-top: 120px;
+    z-index: 1;
+  }//mq
+
+  @media (min-width: 900px) {
+    padding: 150px 20px 80px 20px;
+  }//mq
+
+  @media (min-width: 1300px) {
+    padding: 200px 20px 90px 20px;
+  }//mq
+}//about
+
+.about-bg-front {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 222;
+}
+
+.about-bg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.about-txt-mod {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 0px 40px 0px;
+  position: relative;
+  z-index: 223;
+
+  @media (min-width: 760px) {
+    padding-top: 80px;
+  }//mq
+}//about-txt-mod
