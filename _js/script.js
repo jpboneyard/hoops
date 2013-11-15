@@ -122,10 +122,17 @@ $(document).ready(function() {
 
 	// mouseenter the about-txt-mod
 	// setTimout for ...whatever ms, 200
-		// that time tells page to scroll to top of #about
+		// that time tells page to scroll to top of #about and adds class envelope-open
 	$('.about-txt-mod').on('mouseenter', function() {
 		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 300);
+		$('.about-txt-mod').addClass('envelope-open');
 	});
+
+	//randomize which ball is loaded on the site
+	var images = ['site-ball-7.png', 'site-ball-6.png', 'site-ball-8.png', 'site-ball-9.png'];
+	$('<img src="_img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.site-ball-mod');
+
+
 
 	//when the page loads...
 	//if the window width < 761px
@@ -134,4 +141,8 @@ $(document).ready(function() {
 	//when the window resizes...
 	//if the window width < 761px
 	//then set the height of #nav-list-mod to the window height
+
+	//rotate ball on scroll 
+		// var theta = $(window).scrollTop() % Math.PI;
+		// $('#cog').css({ transform: 'rotate(' + theta + 'rad)' });
 });

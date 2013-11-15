@@ -73,7 +73,7 @@ h3 {
 		@include trans;
 
 		&:hover {
-			color: darken(#615472, 20%);
+			color: #24B5B5;
 			@include trans;
 		}//hover
 	}//a
@@ -411,7 +411,7 @@ header {
 .scroll-arrow {
 	max-width: 40px;
 	position: absolute;
-	bottom: 25px;
+	bottom: 35px;
 	z-index: 666;
 	left: 50%;
 
@@ -528,6 +528,11 @@ header {
 	pointer-events: none;
 }
 
+.missed-shot {
+	position: absolute;
+	top: 0px;
+	z-index: 333;
+}
 
 /* ============================================= */
 /*	About  								   	     */ 
@@ -577,13 +582,12 @@ header {
 		padding: 80px 80px 90px 80px;
 		margin-bottom: -860px;
 	}//mq
-
-	&:hover {
-		margin-bottom: 0px;
-		@include trans;
-	}
-
 }//about-txt-mod
+
+.envelope-open {
+	margin-bottom: 0px;
+	@include trans;
+}
 
 .about-signature {
 	img {

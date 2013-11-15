@@ -413,7 +413,7 @@ h3 {
   transition: all 0.2s ease-in-out;
 }
 .body-txt a:hover, bio-txt a:hover {
-  color: #2f2937;
+  color: #24B5B5;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -781,7 +781,7 @@ header {
 .scroll-arrow {
   max-width: 40px;
   position: absolute;
-  bottom: 25px;
+  bottom: 35px;
   z-index: 666;
   left: 50%;
 }
@@ -897,6 +897,12 @@ header {
   pointer-events: none;
 }
 
+.missed-shot {
+  position: absolute;
+  top: 0px;
+  z-index: 333;
+}
+
 /* ============================================= */
 /*	About  								   	     */
 /* ============================================= */
@@ -949,7 +955,8 @@ header {
     margin-bottom: -860px;
   }
 }
-.about-txt-mod:hover {
+
+.envelope-open {
   margin-bottom: 0px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
