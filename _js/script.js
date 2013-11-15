@@ -123,9 +123,13 @@ $(document).ready(function() {
 	// mouseenter the about-txt-mod
 	// setTimout for ...whatever ms, 200
 		// that time tells page to scroll to top of #about and adds class envelope-open
+    var once = false;
 	$('.about-txt-mod').on('mouseenter', function() {
-		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 300);
-		$('.about-txt-mod').addClass('envelope-open');
+        if (once == false) {
+    		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 300);
+    		$('.about-txt-mod').addClass('envelope-open');
+        }
+        once = true;
 	});
 
 	//randomize which ball is loaded on the site
