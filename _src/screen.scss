@@ -543,6 +543,7 @@ header {
 	background-color: #17A2A5;
 	position: relative;
 	z-index: 333;
+	overflow: hidden;
 
 	@media (min-width: 900px) {
 		padding: 120px 20px 0px 20px;
@@ -576,7 +577,6 @@ header {
 	-moz-box-shadow:    14px 14px 0px 0px rgba(79,67,96,0.3);
   	-webkit-box-shadow: 14px 14px 0px 0px rgba(79,67,96,0.3);
   	box-shadow:         14px 14px 0px 0px rgba(79,67,96,0.3);
-  	@include trans;
 
 	@media (min-width: 760px) {
 		padding: 80px 80px 90px 80px;
@@ -586,7 +586,11 @@ header {
 
 .envelope-open {
 	margin-bottom: 0px;
-	@include trans;
+	transition-delay: 2s;
+	-webkit-transition: margin 2s;
+	-moz-transition: margin 2s; 
+	-o-transition: margin 2s;
+	transition: margin 2s;
 }
 
 .about-signature {

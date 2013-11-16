@@ -271,3 +271,16 @@ s.parentNode.insertBefore(g,s)}(document,"script"));
     padding-top: 80px;
   }//mq
 }//about-txt-mod
+
+
+  // mouseenter the about-txt-mod
+  // setTimout for ...whatever ms, 200
+    // that time tells page to scroll to top of #about and adds class envelope-open
+    var once = false;
+  $('.about-txt-mod').on('mouseenter', function() {
+        if (once == false) {
+        $("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 300);
+        $('.about-txt-mod').addClass('envelope-open');
+        }
+        once = true;
+  });

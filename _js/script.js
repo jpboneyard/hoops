@@ -120,21 +120,36 @@ $(document).ready(function() {
 		}
 	});
 
-	// mouseenter the about-txt-mod
-	// setTimout for ...whatever ms, 200
-		// that time tells page to scroll to top of #about and adds class envelope-open
-    var once = false;
-	$('.about-txt-mod').on('mouseenter', function() {
-        if (once == false) {
-    		$("html, body").delay(200).stop().animate({ scrollTop: $('#about').offset().top }, 300);
-    		$('.about-txt-mod').addClass('envelope-open');
-        }
-        once = true;
-	});
+
 
 	//randomize which ball is loaded on the site
 	var images = ['site-ball-7.png', 'site-ball-6.png', 'site-ball-8.png', 'site-ball-9.png'];
 	$('<img src="_img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.site-ball-mod');
+
+
+	//open envelope on scroll when about section is reached
+	// $(window).scroll(function() {
+
+	// 	var letterClosed = $(window).scrollTop();
+
+	// 	var letterOpen = $('.about-txt-mod').offset().top - ($('.about-txt-mod').height()*0.64);
+
+	// 	if(letterClosed < letterOpen) {
+	// 		// do nothing
+	// 	} else {
+	// 		$("html, body").delay(900).stop().animate;
+ //    		$('.about-txt-mod').addClass('envelope-open');
+	// 	}
+	// });
+
+
+
+$(window).scroll(function () {
+   if ($(window).scrollTop() >= $(document).height() - $(window).height() +1) {
+   	$("html, body").stop().animate({ scrollTop: $('#about').offset().top }, 500);
+       $(".about-txt-mod").addClass("envelope-open");
+   }
+});
 
 
 

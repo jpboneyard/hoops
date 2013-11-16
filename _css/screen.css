@@ -911,6 +911,7 @@ header {
   background-color: #17A2A5;
   position: relative;
   z-index: 333;
+  overflow: hidden;
 }
 @media (min-width: 900px) {
   #about {
@@ -944,10 +945,6 @@ header {
   -moz-box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
   -webkit-box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
   box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 @media (min-width: 760px) {
   .about-txt-mod {
@@ -958,10 +955,11 @@ header {
 
 .envelope-open {
   margin-bottom: 0px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  transition-delay: 2s;
+  -webkit-transition: margin 2s;
+  -moz-transition: margin 2s;
+  -o-transition: margin 2s;
+  transition: margin 2s;
 }
 
 .about-signature img {
