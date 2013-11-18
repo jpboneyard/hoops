@@ -108,17 +108,6 @@ $(document).ready(function() {
 	//becomes position absolute
 	$(window).scroll(function() {
 
-		var bballtop = $(window).scrollTop();
-
-		var stop = $('.about-txt-mod .kicker').offset().top - ($('.site-ball-mod').height()*0.64);
-
-		if(bballtop > stop) {
-			// do nothing
-			$('.site-ball-mod').css('margin-top', stop);
-		} else {
-			$('.site-ball-mod').css('margin-top', bballtop);
-		}
-
 	   if ($(window).scrollTop() >= $(document).height() - $(window).height() -10) {
 	   	// $("html, body").stop().animate({ scrollTop: $('#about').offset().top }, 500);
 	       $(".about-txt-mod").addClass("envelope-open");

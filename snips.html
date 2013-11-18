@@ -296,3 +296,19 @@ s.parentNode.insertBefore(g,s)}(document,"script"));
   //rotate ball on scroll 
     // var theta = $(window).scrollTop() % Math.PI;
     // $('#cog').css({ transform: 'rotate(' + theta + 'rad)' });
+
+
+
+
+ //site-ball stops at about-txt-mod kicker
+ 
+ var bballtop = $(window).scrollTop();
+
+    var stop = $('.about-txt-mod .kicker').offset().top - ($('.site-ball-mod').height()*0.64);
+
+    if(bballtop > stop) {
+      // do nothing
+      $('.site-ball-mod').css('margin-top', stop);
+    } else {
+      $('.site-ball-mod').css('margin-top', bballtop);
+    }   

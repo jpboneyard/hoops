@@ -414,6 +414,11 @@ header {
 	bottom: 35px;
 	z-index: 666;
 	left: 50%;
+	display: none;
+
+	@media (min-width: 700px) {
+		display: block;
+	}//mq
 
 	img {
 		max-width: 100%;
@@ -539,7 +544,7 @@ header {
 /* ============================================= */
 
 #about {
-	padding: 60px 20px 0px 20px;
+	padding: 60px 12px 0px 12px;
 	background-color: #17A2A5;
 	position: relative;
 	z-index: 333;
@@ -737,6 +742,13 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.fixed-ball {
+	position: fixed;
+	top: 25%;
 	z-index: 2;
 	pointer-events: none;
 }
