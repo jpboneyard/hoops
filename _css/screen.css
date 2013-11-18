@@ -748,13 +748,9 @@ header {
 /*	Intro    							   		 */
 /* ============================================= */
 #intro {
-  /*	padding: 60px 20px 40px 20px;
-  */
   background-color: #14A798;
   position: relative;
   z-index: 4;
-  /*	height: 666px;
-  */
   *zoom: 1;
 }
 #intro:after {
@@ -992,12 +988,6 @@ header {
   max-width: 800px;
   margin: 0 auto;
   margin-top: -300px;
-  /*	&:before {
-  		content:url(../_img/envelope-cut.png);
-  		position: absolute;
-  		top: 0px;
-  		width: 200px;
-  	}*/
 }
 
 .envelope-top {
