@@ -118,6 +118,11 @@ $(document).ready(function() {
 		} else {
 			$('.site-ball-mod').css('margin-top', bballtop);
 		}
+
+	   if ($(window).scrollTop() >= $(document).height() - $(window).height() -10) {
+	   	// $("html, body").stop().animate({ scrollTop: $('#about').offset().top }, 500);
+	       $(".about-txt-mod").addClass("envelope-open");
+		}
 	});
 
 
@@ -143,25 +148,4 @@ $(document).ready(function() {
 	// });
 
 
-
-$(window).scroll(function () {
-   if ($(window).scrollTop() >= $(document).height() - $(window).height() +1) {
-   	$("html, body").stop().animate({ scrollTop: $('#about').offset().top }, 500);
-       $(".about-txt-mod").addClass("envelope-open");
-   }
-});
-
-
-
-	//when the page loads...
-	//if the window width < 761px
-	//then set the height of #nav-list-mod to the window height
-
-	//when the window resizes...
-	//if the window width < 761px
-	//then set the height of #nav-list-mod to the window height
-
-	//rotate ball on scroll 
-		// var theta = $(window).scrollTop() % Math.PI;
-		// $('#cog').css({ transform: 'rotate(' + theta + 'rad)' });
 });

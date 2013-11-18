@@ -48,7 +48,7 @@ h3 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .body-txt,bio-txt,dropcap {
@@ -570,7 +570,7 @@ header {
 .about-txt-mod {
 	max-width: 620px;
 	margin: 0 auto;
-	padding: 0px 0px 40px 0px;
+	padding: 40px 20px 25px 20px;
 	position: relative;
 	z-index: 333;
 	background-color: #EFEFE4;
@@ -578,9 +578,14 @@ header {
   	-webkit-box-shadow: 14px 14px 0px 0px rgba(79,67,96,0.3);
   	box-shadow:         14px 14px 0px 0px rgba(79,67,96,0.3);
 
-	@media (min-width: 760px) {
+	@media (min-width: 500px) {
+		padding: 55px 55px 60px 55px;
+		margin-bottom: 0px;
+	}//mq
+
+	@media (min-width: 600px) {
 		padding: 80px 80px 90px 80px;
-		margin-bottom: -860px;
+		margin-bottom: -650px;
 	}//mq
 }//about-txt-mod
 
@@ -591,6 +596,10 @@ header {
 	-moz-transition: margin 2s; 
 	-o-transition: margin 2s;
 	transition: margin 2s;
+
+	@media (min-width: 850px) {
+		margin-bottom: -400px;
+	}//mq
 }
 
 .about-signature {
@@ -628,14 +637,6 @@ header {
 	margin: 0 auto;
 	max-width: 800px;
 	margin-top: -450px;
-
-	// &:hover {
-	// 	transform: rotateX(180deg);
-	// 	-ms-transform: rotateX(180deg);
-	// 	-moz-transform: rotateX(180deg);
-	// 	-o-transform: rotateX(180deg);
-	// 	-webkit-transform: rotateX(180deg);
-	// }
 }
 
 .envelope-cut {
@@ -645,18 +646,75 @@ header {
 	z-index: 444;
 	max-width: 800px;
 	margin: 0 auto;
-}
+	display: none;
 
-.mug-mod {
-	position: absolute;
-	left: -190px;
-	top: 350px;
-	max-width: 400px;
+	@media (min-width: 850px) {
+		display: block;
+	}//mq
 
 	img {
 		width: 100%;
 	}
 }
+
+.envelope-back {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: -350px;	
+	max-width: 800px;
+	display: none;
+
+	@media (min-width: 850px) {
+		display: block;
+	}//mq
+
+	img {
+		width: 100%;
+	}
+}
+
+.mug-mod {
+	position: absolute;
+	top: 350px;
+	max-width: 400px;
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+		left: -220px;
+	}//mq
+
+	@media (min-width: 1300px) {
+		display: block;
+		left: -120px;
+	}//mq
+
+	img {
+		width: 100%;
+	}
+}
+
+.book-mod {
+	position: absolute;
+	top: 250px;
+	max-width: 475px;
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+		right: -350px;
+	}//mq
+
+	@media (min-width: 1300px) {
+		display: block;
+		right: -200px;
+	}//mq
+
+	img {
+		width: 100%;
+	}
+}
+
 
 .site-ball-mod {
 	text-align: center;
@@ -965,15 +1023,15 @@ footer {
 }
 
 @-webkit-keyframes blimp {
-	0% {margin-left: 1200px;}
+	0% {margin-left: 1250px;}
 	100% {margin-left: -1000px;}
 }
 @-moz-keyframes blimp {
-	0% {margin-left: 1200px;}
+	0% {margin-left: 1250px;}
 	100% {margin-left: -1000px;}
 }
 @-o-keyframes blimp {
-	0% {margin-left: 1200px;}
+	0% {margin-left: 1250px;}
 	100% {margin-left: -1000px;}
 }
 
