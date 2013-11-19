@@ -402,6 +402,51 @@ header {
 	z-index: 444;
 }
 
+.intro-subline {
+	position: absolute;
+	z-index: 666;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: $site-tan;
+	font: 400 11px/140% $sans;
+	margin: 0 auto;
+	text-align: center;
+	left: 0%;
+	right: 0px;
+	top: 68%;
+
+	@media (min-width: 500px) {
+		font-size: 15px;
+		top: 58%;
+		left: 27%;
+	}//mq500
+
+	@media (min-width: 800px) {
+		font-size: 17px;
+		left: 25%;
+	}//mq800
+
+	@media (min-width: 1000px) {
+		font-size: 19px;
+	}//mq1000
+
+	@media (min-width: 1200px) {
+		font-size: 21px;
+	}//mq1200
+
+	@media (min-width: 1400px) {
+		font-size: 25px;
+	}//mq1400	
+
+	@media (min-width: 1600px) {
+		font-size: 28px;
+	}//mq1600
+
+	@media (min-width: 1800px) {
+		font-size: 32px;
+	}//mq1800		
+}
+
 .scroll-arrow {
 	max-width: 40px;
 	position: absolute;

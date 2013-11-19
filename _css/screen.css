@@ -774,6 +774,58 @@ header {
   z-index: 444;
 }
 
+.intro-subline {
+  position: absolute;
+  z-index: 666;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ececda;
+  font: 400 11px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  left: 0%;
+  right: 0px;
+  top: 68%;
+}
+@media (min-width: 500px) {
+  .intro-subline {
+    font-size: 15px;
+    top: 58%;
+    left: 27%;
+  }
+}
+@media (min-width: 800px) {
+  .intro-subline {
+    font-size: 17px;
+    left: 25%;
+  }
+}
+@media (min-width: 1000px) {
+  .intro-subline {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-subline {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1400px) {
+  .intro-subline {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1600px) {
+  .intro-subline {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1800px) {
+  .intro-subline {
+    font-size: 32px;
+  }
+}
+
 .scroll-arrow {
   max-width: 40px;
   position: absolute;
