@@ -88,6 +88,7 @@ $(document).ready(function() {
 
     var num_locations = $(".stream-item").length;
     $(".hood-list-item a[data-location='all'] .location-count").text("(" + (num_locations - 1) + ")");
+    $(".intro-subline[data-location='all'] .location-count").text((num_locations - 1));
 
 	//when locations is clicked at mobile size add class visible-m-link
 	$("#locations-link").click(function(e) {
@@ -113,7 +114,6 @@ $(document).ready(function() {
 	       $(".about-txt-mod").addClass("envelope-open");
 		}
 	});
-
 
 
 	//randomize which ball is loaded on the site
