@@ -768,10 +768,27 @@ header {
   width: 100%;
 }
 
+.intro-title-m {
+  width: 100%;
+  position: relative;
+  z-index: 444;
+}
+@media (min-width: 500px) {
+  .intro-title-m {
+    display: none;
+  }
+}
+
 .intro-title {
   width: 100%;
   position: relative;
   z-index: 444;
+  display: none;
+}
+@media (min-width: 500px) {
+  .intro-title {
+    display: block;
+  }
 }
 
 .intro-subline {
@@ -791,7 +808,7 @@ header {
   .intro-subline {
     font-size: 15px;
     top: 58%;
-    left: 27%;
+    left: 30%;
   }
 }
 @media (min-width: 800px) {

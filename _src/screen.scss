@@ -396,10 +396,25 @@ header {
 	}
 }
 
+.intro-title-m {
+	width: 100%;
+	position: relative;
+	z-index: 444;
+
+	@media (min-width: 500px) {
+		display: none;
+	}//mq
+}
+
 .intro-title {
 	width: 100%;
 	position: relative;
 	z-index: 444;
+	display: none;
+
+	@media (min-width: 500px) {
+		display: block;
+	}//mq
 }
 
 .intro-subline {
@@ -418,7 +433,7 @@ header {
 	@media (min-width: 500px) {
 		font-size: 15px;
 		top: 58%;
-		left: 27%;
+		left: 30%;
 	}//mq500
 
 	@media (min-width: 800px) {
