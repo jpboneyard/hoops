@@ -381,15 +381,20 @@ h3 {
 }
 
 .kicker {
-  font: 800 21px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  font: 800 18px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   margin-bottom: 30px;
 }
+@media (min-width: 600px) {
+  .kicker {
+    font-size: 21px;
+  }
+}
 
 .body-txt, bio-txt, dropcap {
-  font: 400 17px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  font: 400 16px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 25px;
   color: #231f20;
 }
