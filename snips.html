@@ -312,3 +312,31 @@ s.parentNode.insertBefore(g,s)}(document,"script"));
     } else {
       $('.site-ball-mod').css('margin-top', bballtop);
     }   
+
+
+
+ //dodgeys 
+ 
+  $(window).scroll(function() {
+    console.log($(window).scrollTop());
+    console.log($(document).height());
+    console.log($(window).height());
+    if ($(window).scrollTop() < (($(document).height() - $(window).height())-100)) {
+      if (wWidth > 400) {
+        clearTimeout(scroll_time);
+        var current_scroll = $(window).scrollTop();
+        
+        if (current_scroll >= $('#top-nav').outerHeight()) {
+          if (current_scroll <= scroll_pos) {
+            $('#top-nav').removeClass('hidden');    
+          }
+          else {
+            $('#top-nav').addClass('hidden');
+          }
+        }
+        scroll_time = setTimeout(function() {
+          scroll_pos = $(window).scrollTop();
+        }, 25);
+      }
+    }
+  });   
