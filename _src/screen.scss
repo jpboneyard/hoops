@@ -736,9 +736,13 @@ header {
 
 .fixed-ball {
 	position: fixed;
-	top: 25%;
+	top: 18%;
 	z-index: 2;
 	pointer-events: none;
+
+	@media (min-width: 700px) {
+		top: 4%;
+	}//mq
 }
 
 .call-to-action {
