@@ -649,7 +649,11 @@ header {
 
 	@media (min-width: 600px) {
 		padding: 80px 80px 90px 80px;
-				position: absolute;
+		position: relative;
+	}//mq
+
+	@media (min-width: 900px) {
+		position: absolute;
 		top: 400px;
 		left: 0px;
 		right: 0px;
@@ -664,7 +668,7 @@ header {
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
-	@media (min-width: 850px) {
+	@media (min-width: 900px) {
 		position: absolute;
 		top: 90px;
 		left: 0px;

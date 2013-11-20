@@ -1031,6 +1031,11 @@ header {
 @media (min-width: 600px) {
   .about-txt-mod {
     padding: 80px 80px 90px 80px;
+    position: relative;
+  }
+}
+@media (min-width: 900px) {
+  .about-txt-mod {
     position: absolute;
     top: 400px;
     left: 0px;
@@ -1046,7 +1051,7 @@ header {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-@media (min-width: 850px) {
+@media (min-width: 900px) {
   .envelope-open {
     position: absolute;
     top: 90px;
