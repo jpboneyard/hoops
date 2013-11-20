@@ -610,7 +610,7 @@ header {
 	overflow: hidden;
 
 	@media (min-width: 900px) {
-		padding: 120px 20px 0px 20px;
+		padding: 1010px 20px 0px 20px;
 	}//mq
 
 }//about
@@ -649,20 +649,26 @@ header {
 
 	@media (min-width: 600px) {
 		padding: 80px 80px 90px 80px;
-		margin-bottom: -650px;
+				position: absolute;
+		top: 400px;
+		left: 0px;
+		right: 0px;
 	}//mq
 }//about-txt-mod
 
 .envelope-open {
 	margin-bottom: 0px;
-	transition-delay: 2s;
-	-webkit-transition: margin 2s;
-	-moz-transition: margin 2s; 
-	-o-transition: margin 2s;
-	transition: margin 2s;
+  	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 
 	@media (min-width: 850px) {
-		margin-bottom: -400px;
+		position: absolute;
+		top: 90px;
+		left: 0px;
+		right: 0px;
 	}//mq
 }
 
@@ -670,30 +676,6 @@ header {
 	img {
 		width: 100%;
 	}
-}
-
-.envelope-btm {
-	height: 300px;
-	width: 100%;
-	background-color: #d1d1d1;
-	position: relative;
-	z-index: 222;
-	max-width: 800px;
-	margin: 0 auto;
-	margin-top: -300px;
-}
-
-.envelope-top {
-	width: 0; 
-	height: 0; 
-	border-left: 400px solid transparent;
-	border-right: 400px solid transparent;
-	border-bottom: 275px solid #ddd;
-	position: relative;
-	z-index: 222;
-	margin: 0 auto;
-	max-width: 800px;
-	margin-top: -450px;
 }
 
 .envelope-cut {
@@ -704,6 +686,11 @@ header {
 	max-width: 800px;
 	margin: 0 auto;
 	display: none;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	pointer-events: none;
 
 	@media (min-width: 850px) {
 		display: block;
@@ -720,6 +707,10 @@ header {
 	margin-bottom: -350px;	
 	max-width: 800px;
 	display: none;
+	position: absolute;
+	bottom: 300px;
+	left: 0px;
+	right: 0px;
 
 	@media (min-width: 850px) {
 		display: block;
@@ -743,7 +734,7 @@ header {
 
 	@media (min-width: 1300px) {
 		display: block;
-		left: -120px;
+		left: -150px;
 	}//mq
 
 	img {
@@ -764,7 +755,7 @@ header {
 
 	@media (min-width: 1300px) {
 		display: block;
-		right: -200px;
+		right: -230px;
 	}//mq 1300
 
 	img {
