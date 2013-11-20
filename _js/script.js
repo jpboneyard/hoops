@@ -109,7 +109,7 @@ $(document).ready(function() {
 	//becomes position absolute
 	$(window).scroll(function() {
 
-	   if ($(window).scrollTop() >= $(document).height() - $(window).height() -10) {
+	   if ($(window).scrollTop() >= $(document).height() - $(window).height() -200) {
 	   	// $("html, body").stop().animate({ scrollTop: $('#about').offset().top }, 500);
 	       $(".about-txt-mod").addClass("envelope-open");
 		}
