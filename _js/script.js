@@ -20,7 +20,11 @@ $(document).ready(function() {
 		if (wWidth > 400) {
 			clearTimeout(scroll_time);
 			var current_scroll = $(window).scrollTop();
-			
+			//what is the total scroll area? (height of the document)
+			//what is the total scroll track? (height of document - window height)
+			//what is the total track I want to use (maybe 95%)
+			//compare the total track I want to use against the current_scroll
+			//exit
 			if (current_scroll >= $('#top-nav').outerHeight()) {
 				if (current_scroll <= scroll_pos) {
 					$('#top-nav').removeClass('hidden');    
