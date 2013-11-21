@@ -394,7 +394,7 @@ h3 {
 }
 
 .body-txt, bio-txt, dropcap {
-  font: 400 16px/170% "Montserrat", sans-serif;
+  font: 400 16px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 25px;
   color: #231f20;
 }
@@ -896,7 +896,7 @@ header {
   }
 }
 .item-details h3, .item-details h4 {
-  font: 200 11px/130% "Montserrat", sans-serif;
+  font: 200 11px/130% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 3px;
@@ -916,7 +916,7 @@ header {
 }
 @media (min-width: 1300px) {
   .item-details h3, .item-details h4 {
-    font: 400 19px/130% "Montserrat", sans-serif;
+    font: 600 19px/130% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   }
 }
 .item-details h4 {
