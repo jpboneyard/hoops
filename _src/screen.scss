@@ -56,7 +56,7 @@ h3 {
 }
 
 .body-txt,bio-txt,dropcap {
-	font: 400 16px/170% $sans;
+	font: 400 16px/170% $sans-alt;
 	margin-bottom: 25px;
 	color: $site-black;
 
@@ -517,7 +517,7 @@ header {
 	}//mq
 
 		h3,h4 {
-			font: 200 11px/130% $sans;
+			font: 200 11px/130% $sans-alt;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			margin-bottom: 3px;
@@ -534,7 +534,7 @@ header {
 			}//mq
 
 			@media (min-width: 1300px) {
-				font: 600 19px/130% $sans;
+				font: 400 19px/130% $sans-alt;
 			}//mq
 		}//h3h4
 
