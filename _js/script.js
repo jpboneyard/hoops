@@ -17,7 +17,11 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function() {
-    if ($(window).scrollTop() < (($(document).height() - $(window).height())-1)) {
+		var docHeight = $(document).height();
+		var winHeight = $(window).height();
+		var scrollArea = docHeight - winHeight;
+
+    if ($(window).scrollTop() < scrollArea *.95) {
 
 		if (wWidth > 400) {
 			clearTimeout(scroll_time);
