@@ -17,14 +17,12 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function() {
+    if ($(window).scrollTop() < (($(document).height() - $(window).height())-1)) {
+
 		if (wWidth > 400) {
 			clearTimeout(scroll_time);
 			var current_scroll = $(window).scrollTop();
-			//what is the total scroll area? (height of the document)
-			//what is the total scroll track? (height of document - window height)
-			//what is the total track I want to use (maybe 95%)
-			//compare the total track I want to use against the current_scroll
-			//exit
+
 			if (current_scroll >= $('#top-nav').outerHeight()) {
 				if (current_scroll <= scroll_pos) {
 					$('#top-nav').removeClass('hidden');    
@@ -36,7 +34,8 @@ $(document).ready(function() {
 			scroll_time = setTimeout(function() {
 				scroll_pos = $(window).scrollTop();
 			}, 25);
-		}
+		 }
+		} 
 	});
 
 	//Mobile nav toggling action-action-action
@@ -114,7 +113,6 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 
 	   if ($(window).scrollTop() >= $(document).height() - $(window).height() -200) {
-	   	// $("html, body").stop().animate({ scrollTop: $('#about').offset().top }, 500);
 	       $(".about-txt-mod").addClass("envelope-open");
 		}
 	});
