@@ -1037,6 +1037,7 @@ header {
 @media (min-width: 900px) {
   .about-txt-mod {
     position: absolute;
+    padding-bottom: 280px;
     top: 400px;
     left: 0px;
     right: 0px;
@@ -1054,7 +1055,7 @@ header {
 @media (min-width: 900px) {
   .envelope-open {
     position: absolute;
-    top: 120px;
+    top: 140px;
     left: 0px;
     right: 0px;
   }
