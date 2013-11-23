@@ -844,12 +844,12 @@ header {
 
 .hoop-2 {
 	.item-details {
-		background-color: #F7C657;
+		background-color: #BFC875;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#F7C657, 7%);
+			background-color: darken(#BFC875, 7%);
 		}//hover
 	}//item-details
 }//hoop-2
