@@ -385,7 +385,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 @media (min-width: 600px) {
   .kicker {
@@ -1291,6 +1291,21 @@ header {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #202f3b;
+}
+
+.hoop-6 .item-details {
+  background-color: #56494D;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-6 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #43393c;
 }
 
 /* ============================================= */
