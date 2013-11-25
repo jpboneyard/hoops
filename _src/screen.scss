@@ -387,6 +387,7 @@ header {
 	position: relative;
 	z-index: 4;
 	@include pie-clearfix;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .intro {
@@ -583,6 +584,7 @@ header {
 .hoop-img {
 	position: relative;
 	z-index: 1;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .net-img {
@@ -590,6 +592,7 @@ header {
 	top: 0px;
 	z-index: 2;
 	pointer-events: none;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .missed-shot {
@@ -641,6 +644,7 @@ header {
 	-moz-box-shadow:    14px 14px 0px 0px rgba(79,67,96,0.3);
   	-webkit-box-shadow: 14px 14px 0px 0px rgba(79,67,96,0.3);
   	box-shadow:         14px 14px 0px 0px rgba(79,67,96,0.3);
+  	-webkit-transform: translate3d(0,0,0);
 
 	@media (min-width: 500px) {
 		padding: 55px 55px 60px 55px;
@@ -792,6 +796,7 @@ header {
 	left: 0;
 	z-index: 2;
 	pointer-events: none;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .fixed-ball {
@@ -799,6 +804,7 @@ header {
 	top: 18%;
 	z-index: 2;
 	pointer-events: none;
+	-webkit-transform: translate3d(0,0,0);
 
 	@media (min-width: 700px) {
 		top: 4%;
@@ -845,12 +851,12 @@ header {
 
 .hoop-2 {
 	.item-details {
-		background-color: #BFC875;
+		background-color: #E4B864;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#BFC875, 7%);
+			background-color: darken(#E4B864, 7%);
 		}//hover
 	}//item-details
 }//hoop-2
