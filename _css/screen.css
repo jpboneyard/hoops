@@ -574,7 +574,7 @@ header {
   font: 600 14px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #ececda;
+  color: #f7f5f0;
   display: none;
   border-bottom: 1px solid #222;
 }
@@ -681,7 +681,7 @@ header {
     background-color: #191919;
     max-width: 300px;
     z-index: 22222222;
-    color: #ececda;
+    color: #f7f5f0;
     position: absolute;
     display: none;
     top: 49px;
@@ -695,7 +695,7 @@ header {
 }
 
 .hood-list-item {
-  font: 200 14px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  font: 600 14px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   padding: 0px 0px 0px 20px;
   border-bottom: 1px solid #2d2d2d;
 }
@@ -738,6 +738,7 @@ header {
 
 .active-link {
   color: #7c735b;
+  font-weight: 600;
 }
 
 .visible-m-link {
@@ -802,7 +803,7 @@ header {
   z-index: 666;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #ececda;
+  color: #f7f5f0;
   font: 400 11px/140% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin: 0 auto;
   text-align: center;
@@ -901,7 +902,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 3px;
-  color: #ececda;
+  color: #f7f5f0;
   display: inline;
 }
 @media (min-width: 600px) {
@@ -922,8 +923,8 @@ header {
 }
 .item-details h4 {
   margin-left: 3px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 .item-details h4:before {
   content: "|";
@@ -994,7 +995,7 @@ header {
 }
 @media (min-width: 900px) {
   #about {
-    padding: 1010px 20px 0px 20px;
+    padding: 880px 20px 0px 20px;
   }
 }
 
@@ -1020,7 +1021,7 @@ header {
   padding: 40px 20px 25px 20px;
   position: relative;
   z-index: 333;
-  background-color: #EFEFE4;
+  background-color: #F7F5F0;
   -moz-box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
   -webkit-box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
   box-shadow: 14px 14px 0px 0px rgba(79, 67, 96, 0.3);
@@ -1042,7 +1043,7 @@ header {
   .about-txt-mod {
     position: absolute;
     padding-bottom: 280px;
-    top: 400px;
+    top: 340px;
     left: 0px;
     right: 0px;
   }
@@ -1059,7 +1060,7 @@ header {
 @media (min-width: 900px) {
   .envelope-open {
     position: absolute;
-    top: 140px;
+    top: 80px;
     left: 0px;
     right: 0px;
   }
@@ -1219,7 +1220,7 @@ header {
 /*	Hoop Styles							   	     */
 /* ============================================= */
 .hoop-1 .item-details {
-  background-color: #4E445B;
+  background-color: #40384B;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1230,11 +1231,11 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #3c3547;
+  background-color: #362f3f;
 }
 
 .hoop-2 .item-details {
-  background-color: #E4B864;
+  background-color: #CE5559;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1245,11 +1246,11 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #dfaa46;
+  background-color: #c9454a;
 }
 
 .hoop-3 .item-details {
-  background-color: #b7484d;
+  background-color: #DB6D3C;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1260,11 +1261,11 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #9d3e42;
+  background-color: #d8602b;
 }
 
 .hoop-4 .item-details {
-  background-color: #333433;
+  background-color: #F0AB55;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1275,11 +1276,11 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #212221;
+  background-color: #eea242;
 }
 
 .hoop-5 .item-details {
-  background-color: #2C4152;
+  background-color: #2DA8A7;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1290,11 +1291,11 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #202f3b;
+  background-color: #299897;
 }
 
 .hoop-6 .item-details {
-  background-color: #56494D;
+  background-color: #333433;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1305,7 +1306,67 @@ header {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #43393c;
+  background-color: #292a29;
+}
+
+.hoop-7 .item-details {
+  background-color: #D64959;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-7 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #d2384a;
+}
+
+.hoop-8 .item-details {
+  background-color: #BC4347;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-8 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #ad3e41;
+}
+
+.hoop-9 .item-details {
+  background-color: #5CB1A0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-9 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #50a897;
+}
+
+.hoop-10 .item-details {
+  background-color: #D97A56;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-10 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #d56d45;
 }
 
 /* ============================================= */
@@ -1447,7 +1508,7 @@ footer h3 {
 /* ============================================= */
 .btn-submit a {
   position: relative;
-  color: #ececda;
+  color: #f7f5f0;
   text-decoration: none;
   background-color: #554964;
   display: block;
