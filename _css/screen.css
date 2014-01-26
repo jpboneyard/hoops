@@ -370,6 +370,12 @@ p {
   margin-bottom: 25px;
 }
 
+@media (min-width: 600px) {
+  h1, h2, h3, h4, h5 {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
 h2 {
   font: 400 60px/130% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 15px;
@@ -394,7 +400,7 @@ h3 {
 }
 
 .body-txt, bio-txt, dropcap {
-  font: 400 16px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
+  font: 400 17px/170% "proxima-nova", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 25px;
   color: #231f20;
 }
@@ -909,6 +915,7 @@ header {
   .item-details h3, .item-details h4 {
     font-size: 14px;
     letter-spacing: 3px;
+    font-weight: 600;
   }
 }
 @media (min-width: 900px) {

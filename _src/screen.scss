@@ -33,6 +33,12 @@ p {
 	margin-bottom: 25px; 
 }
 
+h1,h2,h3,h4,h5 {
+	@media (min-width: 600px) {
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
 h2 {
 	font: 400 60px/130% $sans;
 	margin-bottom: 15px;
@@ -56,7 +62,7 @@ h3 {
 }
 
 .body-txt,bio-txt,dropcap {
-	font: 400 16px/170% $sans;
+	font: 400 17px/170% $sans;
 	margin-bottom: 25px;
 	color: $site-black;
 
@@ -531,6 +537,7 @@ header {
 			@media (min-width: 600px) {
 				font-size: 14px;
 				letter-spacing: 3px;
+				font-weight: 600;
 			}//mq
 
 			@media (min-width: 900px) {
