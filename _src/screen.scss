@@ -786,10 +786,11 @@ header {
 .site-ball-mod {
 	text-align: center;
 	width: 100%;
-	
+
 	img {
 		width: 100%;
 	}
+
 }//site-ball-mod
 
 .site-ball {
@@ -798,6 +799,18 @@ header {
 	vertical-align: center;
 	margin-bottom: 20px;
 	pointer-events: none;
+}
+
+.site-ball-default {
+	position: fixed;
+	top: 0%;
+	z-index: 1;
+	pointer-events: none;
+	-webkit-transform: translate3d(0,0,0);
+
+	@media (min-width: 700px) {
+		top: 1%;
+	}//mq
 }
 
 .absolute-ball {

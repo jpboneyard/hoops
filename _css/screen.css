@@ -1180,6 +1180,19 @@ header {
   pointer-events: none;
 }
 
+.site-ball-default {
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+@media (min-width: 700px) {
+  .site-ball-default {
+    top: 1%;
+  }
+}
+
 .absolute-ball {
   position: absolute;
   top: 0;

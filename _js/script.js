@@ -4,6 +4,10 @@
 $(document).ready(function() {
 	'use strict';
 
+	//randomize which ball is loaded on the site
+	var images = ['site-ball-7.png', 'site-ball-6.png', 'site-ball-8.png', 'site-ball-9.png'];
+	$('<img src="_img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.site-ball-mod');
+
 	$("a.anchorLink").anchorAnimate();
 
 	var scroll_pos = 0;
@@ -120,12 +124,6 @@ $(document).ready(function() {
 	       $(".about-txt-mod").addClass("envelope-open");
 		}
 	});
-
-
-	//randomize which ball is loaded on the site
-	var images = ['site-ball-7.png', 'site-ball-6.png', 'site-ball-8.png', 'site-ball-9.png'];
-	$('<img src="_img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.site-ball-mod');
-
 
 	//open envelope on scroll when about section is reached
 	// $(window).scroll(function() {
