@@ -125,6 +125,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$("img.lazy").lazyload({
+	    threshold : 1920
+	});
+
 	//open envelope on scroll when about section is reached
 	// $(window).scroll(function() {
 
