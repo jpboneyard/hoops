@@ -873,101 +873,30 @@ header {
 /*	Hoop Styles							   	     */ 
 /* ============================================= */
 
-.hoop-1 {
+
+.hoop-11 {
 	.item-details {
-		background-color: #40384B;
+		background-color: #15656E;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#40384B, 4%);
+			background-color: darken(#15656E, 4%);
 		}//hover
 	}//item-details
-}//hoop-1
+}//hoop-11
 
-.hoop-2 {
+.hoop-10 {
 	.item-details {
-		background-color: #CE5559;
+		background-color: #E98C42;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#CE5559, 4%);
+			background-color: darken(#E98C42, 4%);
 		}//hover
 	}//item-details
-}//hoop-2
-
-.hoop-3 {
-	.item-details {
-		background-color: #DB6D3C;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#DB6D3C, 4%);
-		}//hover
-	}//item-details
-}//hoop-3
-
-.hoop-4 {
-	.item-details {
-		background-color: #F0AB55;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#F0AB55, 4%);
-		}//hover
-	}//item-details
-}//hoop-4
-
-.hoop-5 {
-	.item-details {
-		background-color: #2DA8A7;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#2DA8A7, 4%);
-		}//hover
-	}//item-details
-}//hoop-5
-
-.hoop-6 {
-	.item-details {
-		background-color: #333433;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#333433, 4%);
-		}//hover
-	}//item-details
-}//hoop-6
-
-.hoop-7 {
-	.item-details {
-		background-color: #D64959;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#D64959, 4%);
-		}//hover
-	}//item-details
-}//hoop-7
-
-.hoop-8 {
-	.item-details {
-		background-color: #BC4347;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#BC4347, 4%);
-		}//hover
-	}//item-details
-}//hoop-8
+}//hoop-10
 
 .hoop-9 {
 	.item-details {
@@ -981,17 +910,104 @@ header {
 	}//item-details
 }//hoop-9
 
-.hoop-10 {
+.hoop-8 {
 	.item-details {
-		background-color: #D97A56;
+		background-color: #BC4347;
 		@include trans;
 
 		&:hover {
 			@include trans;
-			background-color: darken(#D97A56, 4%);
+			background-color: darken(#BC4347, 4%);
 		}//hover
 	}//item-details
-}//hoop-10
+}//hoop-8
+
+.hoop-7 {
+	.item-details {
+		background-color: #D64959;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#D64959, 4%);
+		}//hover
+	}//item-details
+}//hoop-7
+
+.hoop-6 {
+	.item-details {
+		background-color: #333433;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#333433, 4%);
+		}//hover
+	}//item-details
+}//hoop-6
+
+.hoop-5 {
+	.item-details {
+		background-color: #2DA8A7;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#2DA8A7, 4%);
+		}//hover
+	}//item-details
+}//hoop-5
+
+.hoop-4 {
+	.item-details {
+		background-color: #F0AB55;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#F0AB55, 4%);
+		}//hover
+	}//item-details
+}//hoop-4
+
+.hoop-3 {
+	.item-details {
+		background-color: #DB6D3C;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#DB6D3C, 4%);
+		}//hover
+	}//item-details
+}//hoop-3
+
+.hoop-2 {
+	.item-details {
+		background-color: #CE5559;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#CE5559, 4%);
+		}//hover
+	}//item-details
+}//hoop-2
+
+
+.hoop-1 {
+	.item-details {
+		background-color: #40384B;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#40384B, 4%);
+		}//hover
+	}//item-details
+}//hoop-1
+
+
 
 
 /* ============================================= */
