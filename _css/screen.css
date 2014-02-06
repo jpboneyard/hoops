@@ -391,11 +391,17 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 @media (min-width: 600px) {
   .kicker {
-    font-size: 21px;
+    font-size: 25px;
+    margin-bottom: 28px;
+  }
+}
+@media (min-width: 900px) {
+  .kicker {
+    font-size: 22px;
   }
 }
 
@@ -405,6 +411,11 @@ h3 {
   color: #231f20;
 }
 @media (min-width: 600px) {
+  .body-txt, bio-txt, dropcap {
+    font-size: 20px;
+  }
+}
+@media (min-width: 900px) {
   .body-txt, bio-txt, dropcap {
     font-size: 18px;
   }
@@ -861,7 +872,7 @@ header {
   position: absolute;
   bottom: 35px;
   z-index: 666;
-  left: 50%;
+  left: 48.25%;
   display: none;
 }
 @media (min-width: 700px) {
@@ -1000,6 +1011,11 @@ header {
   z-index: 333;
   overflow: hidden;
 }
+@media (min-width: 600px) {
+  #about {
+    padding-top: 70px;
+  }
+}
 @media (min-width: 900px) {
   #about {
     padding: 880px 20px 0px 20px;
@@ -1042,7 +1058,7 @@ header {
 }
 @media (min-width: 600px) {
   .about-txt-mod {
-    padding: 80px 80px 90px 80px;
+    padding: 80px 80px 170px 80px;
     position: relative;
   }
 }
@@ -1091,7 +1107,7 @@ header {
   right: 0px;
   pointer-events: none;
 }
-@media (min-width: 850px) {
+@media (min-width: 900px) {
   .envelope-cut {
     display: block;
   }
@@ -1111,7 +1127,7 @@ header {
   left: 0px;
   right: 0px;
 }
-@media (min-width: 850px) {
+@media (min-width: 900px) {
   .envelope-back {
     display: block;
   }
