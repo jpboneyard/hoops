@@ -880,6 +880,30 @@ header {
 /* ============================================= */
 
 
+.hoop-13 {
+	.item-details {
+		background-color: #DC4358;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#DC4358, 4%);
+		}//hover
+	}//item-details
+}//hoop-13
+
+.hoop-12 {
+	.item-details {
+		background-color: #F1B95D;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#F1B95D, 4%);
+		}//hover
+	}//item-details
+}//hoop-12
+
 .hoop-11 {
 	.item-details {
 		background-color: #15656E;

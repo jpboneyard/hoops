@@ -1262,6 +1262,36 @@ header {
 /* ============================================= */
 /*	Hoop Styles							   	     */
 /* ============================================= */
+.hoop-13 .item-details {
+  background-color: #DC4358;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-13 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #d93249;
+}
+
+.hoop-12 .item-details {
+  background-color: #F1B95D;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hoop-12 .item-details:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #efb14a;
+}
+
 .hoop-11 .item-details {
   background-color: #15656E;
   -webkit-transition: all 0.2s ease-in-out;
