@@ -1262,6 +1262,9 @@ header {
 /* ============================================= */
 /*	Hoop Styles							   	     */
 /* ============================================= */
+.hoop-13 {
+  background-color: #ec485b x;
+}
 .hoop-13 .item-details {
   background-color: #DC4358;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1277,6 +1280,9 @@ header {
   background-color: #d93249;
 }
 
+.hoop-12 {
+  background-color: #FDC158;
+}
 .hoop-12 .item-details {
   background-color: #F1B95D;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1292,6 +1298,9 @@ header {
   background-color: #efb14a;
 }
 
+.hoop-11 {
+  background-color: #0D6E7A;
+}
 .hoop-11 .item-details {
   background-color: #15656E;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1307,6 +1316,9 @@ header {
   background-color: #12555d;
 }
 
+.hoop-10 {
+  background-color: #F5933B;
+}
 .hoop-10 .item-details {
   background-color: #E98C42;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1322,6 +1334,9 @@ header {
   background-color: #e78130;
 }
 
+.hoop-9 {
+  background-color: #64C2AE;
+}
 .hoop-9 .item-details {
   background-color: #5CB1A0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1337,6 +1352,9 @@ header {
   background-color: #50a897;
 }
 
+.hoop-8 {
+  background-color: #CE484A;
+}
 .hoop-8 .item-details {
   background-color: #BC4347;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1352,6 +1370,9 @@ header {
   background-color: #ad3e41;
 }
 
+.hoop-7 {
+  background-color: #ED505D;
+}
 .hoop-7 .item-details {
   background-color: #D64959;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1367,6 +1388,9 @@ header {
   background-color: #d2384a;
 }
 
+.hoop-6 {
+  background-color: #383938;
+}
 .hoop-6 .item-details {
   background-color: #333433;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1382,6 +1406,9 @@ header {
   background-color: #292a29;
 }
 
+.hoop-5 {
+  background-color: #20B8B7;
+}
 .hoop-5 .item-details {
   background-color: #2DA8A7;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1397,6 +1424,9 @@ header {
   background-color: #299897;
 }
 
+.hoop-4 {
+  background-color: #FBB84E;
+}
 .hoop-4 .item-details {
   background-color: #F0AB55;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1412,6 +1442,9 @@ header {
   background-color: #eea242;
 }
 
+.hoop-3 {
+  background-color: #F27639;
+}
 .hoop-3 .item-details {
   background-color: #DB6D3C;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1427,6 +1460,9 @@ header {
   background-color: #d8602b;
 }
 
+.hoop-2 {
+  background-color: #EE6062;
+}
 .hoop-2 .item-details {
   background-color: #CE5559;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1442,6 +1478,9 @@ header {
   background-color: #c9454a;
 }
 
+.hoop-1 {
+  background-color: #494256;
+}
 .hoop-1 .item-details {
   background-color: #40384B;
   -webkit-transition: all 0.2s ease-in-out;
