@@ -54,11 +54,14 @@ $(document).ready(function() {
 	});
 
 	//detect click on a location - then filter results based on specific location
+	
 	$(".hood-list-item a").click(function(e) {
-		e.preventDefault();
+		e.preventDefault(); 
 		//Remove the active state from whichever button is active
 		$(".hood-list-item a.active-link").removeClass('active-link');
+
 		//And add the active state to whichever button was clicked
+
 		$(this).addClass('active-link');
 
 		var location = $(this).data("location");
@@ -66,10 +69,13 @@ $(document).ready(function() {
 		//check whether it equals all
 		if (location === "all") {
 			$(".stream-item").show();
+
 		} else {
 			$(".stream-item").hide();
 			$("."+location).show();
 		}
+								$(window).scroll();
+
 	});
 
     $(".hood-list-item a").not('.except-me').each(function() {
