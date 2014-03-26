@@ -13,37 +13,51 @@ $(document).ready(function() {
 	var scroll_pos = 0;
 	var scroll_time;
 
-	var wWidth;
-	wWidth = $(window).width();
+	var wWidth,
+		winHeight,
+		scrollArea,
+		docHeight,
+		topNavHeight;
 
-	$(window).resize(function(){
+	function getSizes() {
 		wWidth = $(window).width();
-	});
+		docHeight = $(document).height();
+		winHeight = $(window).height();
+		scrollArea = docHeight - winHeight;
+		topNavHeight = $('#top-nav').outerHeight();
+	}
+	getSizes();
+
+	$(window).resize(getSizes);
+
+	var scrollTop = 0,
+		scroll_time;
 
 	$(window).scroll(function() {
-		var docHeight = $(document).height();
-		var winHeight = $(window).height();
-		var scrollArea = docHeight - winHeight;
 
-    if ($(window).scrollTop() < scrollArea *.95) {
+		scrollTop = $(window).scrollTop();
+	    if (scrollTop < scrollArea *.95 && wWidth > 400) {
 
-		if (wWidth > 400) {
 			clearTimeout(scroll_time);
-			var current_scroll = $(window).scrollTop();
 
-			if (current_scroll >= $('#top-nav').outerHeight()) {
-				if (current_scroll <= scroll_pos) {
-					$('#top-nav').removeClass('hidden');    
-				}
-				else {
-					$('#top-nav').addClass('hidden');
-				}
+			if (scrollTop <= scroll_pos || scrollTop < topNavHeight) {
+				$('#top-nav').removeClass('hidden');
+			} else {
+				$('#top-nav').addClass('hidden');
 			}
+
 			scroll_time = setTimeout(function() {
-				scroll_pos = $(window).scrollTop();
+				scroll_pos = scrollTop;
 			}, 25);
-		 }
-		} 
+		}
+
+		//when viewport reaches about section ball (set up alert box when position
+		// reached to test) (testing for position of element relative to viewport)
+		// (set up console.log to see what position is)
+
+		if (scrollTop >= docHeight - winHeight - 200) {
+	       $(".about-txt-mod").addClass("envelope-open");
+		}
 	});
 
 	//Mobile nav toggling action-action-action
@@ -54,9 +68,9 @@ $(document).ready(function() {
 	});
 
 	//detect click on a location - then filter results based on specific location
-	
+
 	$(".hood-list-item a").click(function(e) {
-		e.preventDefault(); 
+		e.preventDefault();
 		//Remove the active state from whichever button is active
 		$(".hood-list-item a.active-link").removeClass('active-link');
 
@@ -74,7 +88,6 @@ $(document).ready(function() {
 			$(".stream-item").hide();
 			$("."+location).show();
 		}
-								$(window).scroll();
 
 	});
 
@@ -109,7 +122,7 @@ $(document).ready(function() {
 
 	//when locations is clicked at mobile size add class visible-m-link
 	$("#locations-link").click(function(e) {
-		e.preventDefault();	
+		e.preventDefault();
 		$(".hood-list").toggleClass('visible-m-link');
 	});
 
@@ -118,19 +131,6 @@ $(document).ready(function() {
 			$('.m-nav-toggle').trigger('click');
 		});
 	}
-  
-	//when viewport reaches about section ball (set up alert box when position 
-	// reached to test) (testing for position of element relative to viewport) 
-	// (set up console.log to see what position is)
-
-	//becomes position absolute
-	$(window).scroll(function() {
-
-	   if ($(window).scrollTop() >= $(document).height() - $(window).height() -200) {
-	       $(".about-txt-mod").addClass("envelope-open");
-		}
-	});
-
 
 	var lazyImages = $("img.lazy");
 	$(window).load(lazyImages, function(){
@@ -138,7 +138,7 @@ $(document).ready(function() {
 		    threshold : 1920
 		});
 	});
-	
+
 	//open envelope on scroll when about section is reached
 	// $(window).scroll(function() {
 
