@@ -54,15 +54,10 @@ h3 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 
 	@media (min-width: 600px) {
-		font-size: 25px;
-		margin-bottom: 28px;
-	}//mq
-
-	@media (min-width: 900px) {
-		font-size: 22px;
+		font-size: 21px
 	}//mq
 }
 
@@ -72,10 +67,6 @@ h3 {
 	color: $site-black;
 
 	@media (min-width: 600px) {
-		font-size: 20px;
-	}//mq
-
-	@media (min-width: 900px) {
 		font-size: 18px;
 	}//mq
 }
@@ -154,10 +145,6 @@ header {
 	max-width: 175px;
 	position: relative;
 	@include pie-clearfix;
-
-	@media (min-width: 760px) {
-		margin-left: 10px;
-	}//mq760
 }
 
 .nav-logo-hover {
@@ -263,15 +250,13 @@ header {
 	}//mq 760
 
 	&:last-child {
-	@media (min-width:760px){
-		margin-right: 15px;
-	}//mq 760
+		margin-right: 0px;
 
 		&:hover {
 			padding: 0px 0px;
 			@media (min-width: 760px) {
 				padding: 30px 15px;
-				margin-right: 0px;
+				margin-right: -15px;
 				margin-left: -15px;
 			}//mq 760
 		}//hover
@@ -328,7 +313,7 @@ header {
 
 	@media (min-width: 760px) {
 		background-color: #191919;
-		max-width: 257px;
+		max-width: 300px;
 		z-index: 22222222;
 		color: $site-tan;
 		position: absolute;
@@ -494,7 +479,7 @@ header {
 	position: absolute;
 	bottom: 35px;
 	z-index: 666;
-	left: 48.25%;
+	left: 50%;
 	display: none;
 
 	@media (min-width: 700px) {
@@ -637,10 +622,6 @@ header {
 	z-index: 333;
 	overflow: hidden;
 
-	@media (min-width: 600px) {
-		padding-top: 70px;
-	}//mq	
-
 	@media (min-width: 900px) {
 		padding: 880px 20px 0px 20px;
 	}//mq
@@ -681,7 +662,7 @@ header {
 	}//mq
 
 	@media (min-width: 600px) {
-		padding: 80px 80px 170px 80px;
+		padding: 80px 80px 90px 80px;
 		position: relative;
 	}//mq
 
@@ -730,7 +711,7 @@ header {
 	right: 0px;
 	pointer-events: none;
 
-	@media (min-width: 900px) {
+	@media (min-width: 850px) {
 		display: block;
 	}//mq
 
@@ -750,7 +731,7 @@ header {
 	left: 0px;
 	right: 0px;
 
-	@media (min-width: 900px) {
+	@media (min-width: 850px) {
 		display: block;
 	}//mq
 
@@ -838,7 +819,7 @@ header {
 	left: 0;
 	z-index: 2;
 	pointer-events: none;
-	-webkit-transform: trans te3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .fixed-ball {
@@ -879,179 +860,7 @@ header {
 /*	Hoop Styles							   	     */ 
 /* ============================================= */
 
-
-.hoop-13 {
-	background-color: #EC485Bx;
-
-	.item-details {
-		background-color: #DC4358;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#DC4358, 4%);
-		}//hover
-	}//item-details
-}//hoop-13
-
-.hoop-12 {
-	background-color: #FDC158;
-
-	.item-details {
-		background-color: #F1B95D;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#F1B95D, 4%);
-		}//hover
-	}//item-details
-}//hoop-12
-
-.hoop-11 {
-	background-color: #0D6E7A;
-
-	.item-details {
-		background-color: #15656E;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#15656E, 4%);
-		}//hover
-	}//item-details
-}//hoop-11
-
-.hoop-10 {
-	background-color: #F5933B;
-
-	.item-details {
-		background-color: #E98C42;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#E98C42, 4%);
-		}//hover
-	}//item-details
-}//hoop-10
-
-.hoop-9 {
-	background-color: #64C2AE;
-
-	.item-details {
-		background-color: #5CB1A0;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#5CB1A0, 4%);
-		}//hover
-	}//item-details
-}//hoop-9
-
-.hoop-8 {
-	background-color: #CE484A;
-
-	.item-details {
-		background-color: #BC4347;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#BC4347, 4%);
-		}//hover
-	}//item-details
-}//hoop-8
-
-.hoop-7 {
-	background-color: #ED505D;
-
-	.item-details {
-		background-color: #D64959;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#D64959, 4%);
-		}//hover
-	}//item-details
-}//hoop-7
-
-.hoop-6 {
-	background-color: #383938;
-
-	.item-details {
-		background-color: #333433;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#333433, 4%);
-		}//hover
-	}//item-details
-}//hoop-6
-
-.hoop-5 {	
-	background-color: #20B8B7;
-
-	.item-details {
-		background-color: #2DA8A7;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#2DA8A7, 4%);
-		}//hover
-	}//item-details
-}//hoop-5
-
-.hoop-4 {
-	background-color: #FBB84E;
-
-	.item-details {
-		background-color: #F0AB55;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#F0AB55, 4%);
-		}//hover
-	}//item-details
-}//hoop-4
-
-.hoop-3 {
-	background-color: #F27639;
-
-	.item-details {
-		background-color: #DB6D3C;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#DB6D3C, 4%);
-		}//hover
-	}//item-details
-}//hoop-3
-
-.hoop-2 {
-	background-color: #EE6062;
-
-	.item-details {
-		background-color: #CE5559;
-		@include trans;
-
-		&:hover {
-			@include trans;
-			background-color: darken(#CE5559, 4%);
-		}//hover
-	}//item-details
-}//hoop-2
-
-
 .hoop-1 {
-	background-color: #494256;
-
 	.item-details {
 		background-color: #40384B;
 		@include trans;
@@ -1063,7 +872,113 @@ header {
 	}//item-details
 }//hoop-1
 
+.hoop-2 {
+	.item-details {
+		background-color: #CE5559;
+		@include trans;
 
+		&:hover {
+			@include trans;
+			background-color: darken(#CE5559, 4%);
+		}//hover
+	}//item-details
+}//hoop-2
+
+.hoop-3 {
+	.item-details {
+		background-color: #DB6D3C;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#DB6D3C, 4%);
+		}//hover
+	}//item-details
+}//hoop-3
+
+.hoop-4 {
+	.item-details {
+		background-color: #F0AB55;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#F0AB55, 4%);
+		}//hover
+	}//item-details
+}//hoop-4
+
+.hoop-5 {
+	.item-details {
+		background-color: #2DA8A7;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#2DA8A7, 4%);
+		}//hover
+	}//item-details
+}//hoop-5
+
+.hoop-6 {
+	.item-details {
+		background-color: #333433;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#333433, 4%);
+		}//hover
+	}//item-details
+}//hoop-6
+
+.hoop-7 {
+	.item-details {
+		background-color: #D64959;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#D64959, 4%);
+		}//hover
+	}//item-details
+}//hoop-7
+
+.hoop-8 {
+	.item-details {
+		background-color: #BC4347;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#BC4347, 4%);
+		}//hover
+	}//item-details
+}//hoop-8
+
+.hoop-9 {
+	.item-details {
+		background-color: #5CB1A0;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#5CB1A0, 4%);
+		}//hover
+	}//item-details
+}//hoop-9
+
+.hoop-10 {
+	.item-details {
+		background-color: #D97A56;
+		@include trans;
+
+		&:hover {
+			@include trans;
+			background-color: darken(#D97A56, 4%);
+		}//hover
+	}//item-details
+}//hoop-10
 
 
 /* ============================================= */
